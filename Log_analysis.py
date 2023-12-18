@@ -9,14 +9,7 @@ list_audio_configs = []
 string_version = '' 
 audio_config_len = {'JL701n':13,'ac703n':12,'JL703n':13,}
 
-# #定义chip类，包含型号版本、音频配置长度、音频配置信息
-# class Chip(object):
-#     def __init__(self,version,audio_config_len,audio_config_date):
-#         self.version = version
-#         self.audio_config_len = audio_config_len
-#         self.audio_config_date = audio_config_date
 
-# 
 def jl701n_audio_config(lists):
     ADC_Bitwidth = lists[0].split(",")[0].split("Width:")[1]
     ADC_DCC = lists[0].split("DCC:")[1]
