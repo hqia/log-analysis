@@ -8,44 +8,32 @@ get_len = 0
 list_audio_configs = []
 string_version = '' 
 audio_config_len = {'JL701n':13,'ac703n':12,'JL703n':13,}
-
+again_tab = {'111':"0dB",'011':"-3dB",'001':"-9dB",'000':"-15dB"}
 
 def jl701n_audio_config(lists):
     ADC_Bitwidth = lists[0].split(",")[0].split("Width:")[1]
-    ADC_DCC = lists[0].split("DCC:")[1]
-   
+    ADC_DCC = lists[0].split("DCC:")[1]   
     ADC_MAX_Gain = lists[1].split(")")[0].split("Max:")[1]
     ADC_Gain = lists[1].split("):")[1].split(",6dB")[0]
-    ADC_6dB_Boost = lists[1].split("st:")[1]
-    
+    ADC_6dB_Boost = lists[1].split("st:")[1]    
     DAC_Bitwidth = lists[2].split(",")[0].split("Width:")[1]
-    DAC_DCC = lists[2].split("DCC:")[1]
-    
+    DAC_DCC = lists[2].split("DCC:")[1]    
     DAC_Max_AGain = lists[3].split(")")[0].split("Max:")[1]
     DAC_AGain = lists[3].split("):")[1].split(",DGain")[0]
     DAC_Max_DGain = lists[3].split("DGain(Max:")[1].split("):")[0]
-    DAC_DGain = lists[3].split("DGain(Max:")[1].split("):")[1]
-    
-    JL_WL_AUD_CON0 = lists[4].split("CON0:")[1]
-    
-    AUD_CON = lists[5].split("CON:")[1]
-    
-    DAC_CON = lists[6].split("CON:")[1]
-    
-    ADC_CON = lists[7].split("CON:")[1]
-    
-    ADC_CON1 = lists[8].split("CON1:")[1]
-    
-    DAC_VL0 = lists[9].split("VL0:")[1]
-    
-    DAC_TM0 = lists[10].split("TM0:")[1]
-    
+    DAC_DGain = lists[3].split("DGain(Max:")[1].split("):")[1]    
+    JL_WL_AUD_CON0 = lists[4].split("CON0:")[1]   
+    AUD_CON = lists[5].split("CON:")[1]   
+    DAC_CON = lists[6].split("CON:")[1]    
+    ADC_CON = lists[7].split("CON:")[1]   
+    ADC_CON1 = lists[8].split("CON1:")[1]   
+    DAC_VL0 = lists[9].split("VL0:")[1]    
+    DAC_TM0 = lists[10].split("TM0:")[1]    
     DAA_CON0 = lists[11].split("CON 0:")[1].split(" ")[0]
     DAA_CON1 = lists[11].split("\t1:")[1].split(",\t2:")[0]
     DAA_CON2 = lists[11].split("\t2:")[1].split(",\t3")[0]
     DAA_CON3 = lists[11].split("\t3:")[1].split("    ")[0]
-    DAA_CON7 = lists[11].split(" 7:")[1]
-    
+    DAA_CON7 = lists[11].split(" 7:")[1]   
     ADA_CON0 = lists[12].split("CON 0:")[1].split("\t1")[0]
     ADA_CON1 = lists[12].split("\t1:")[1].split("\t2")[0]
     ADA_CON2 = lists[12].split("\t2:")[1].split("\t3")[0]
@@ -55,7 +43,7 @@ def jl701n_audio_config(lists):
     ADA_CON6 = lists[12].split("\t6:")[1].split("\t7")[0]
     ADA_CON7 = lists[12].split("\t7:")[1].split("\t8")[0]
     ADA_CON8 = lists[12].split("\t8:")[1]
-    
+       
     print("ADC位宽=" + ADC_Bitwidth)
     print("ADC_DCC=" + ADC_DCC)
     print("ADC最大增益=" + ADC_MAX_Gain)
@@ -64,34 +52,24 @@ def jl701n_audio_config(lists):
 # 
 def ac703n_audio_config(lists):
     ADC_CFG_PGA = lists[0].split("PGA:")[1].split(",6dB")[0]
-    ADC_CFG_6dB_Boost = lists[0].split("st:")[1]
-    
+    ADC_CFG_6dB_Boost = lists[0].split("st:")[1]    
     DAC_CFG_AGain = lists[1].split("AGain:")[1].split(",DGain")[0]
-
-    DAC_CFG_DGain = lists[1].split("DGain:")[1]
-    
+    DAC_CFG_DGain = lists[1].split("DGain:")[1] 
     ADC_Bitwidth = lists[2].split("ADC = ")[1]
-    DAC_Bitwidth = lists[2].split("DAC = ")[1].split(",ADC")[0]
-    
-    JL_WL_AUD_CON0 = lists[3].split("CON0:")[1]
-    
-    AUD_CON = lists[4].split("CON:")[1]
-    
-    DAC_CON = lists[5].split("CON:")[1]
-    
-    ADC_CON = lists[6].split("CON:")[1]
-    
-    ADC_CON1 = lists[7].split("CON1:")[1]
-    
-    DAC_TM0 = lists[8].split("TM0:")[1]
-    
+    DAC_Bitwidth = lists[2].split("DAC = ")[1].split(",ADC")[0]  
+    JL_WL_AUD_CON0 = lists[3].split("CON0:")[1]    
+    AUD_CON = lists[4].split("CON:")[1]   
+    DAC_CON = lists[5].split("CON:")[1]    
+    ADC_CON = lists[6].split("CON:")[1]    
+    ADC_CON1 = lists[7].split("CON1:")[1]   
+    DAC_TM0 = lists[8].split("TM0:")[1]    
     DAA_CON0 = lists[9].split("CON 0:")[1].split(" ")[0]
     DAA_CON1 = lists[9].split("\t1:")[1].split(",\t2:")[0]
+    
     DAA_CON2 = lists[9].split("\t2:")[1].split(",\t3")[0]
     DAA_CON3 = lists[9].split("\t3:")[1].split("    ")[0]
     DAA_CON4 = lists[9].split("    4:")[1].split(",7:")[0]
-    DAA_CON7 = lists[9].split(",7:")[1]
-    
+    DAA_CON7 = lists[9].split(",7:")[1]    
     ADA_CON0 = lists[10].split("CON 0:")[1].split("\t1")[0]
     ADA_CON1 = lists[10].split("\t1:")[1].split("\t2")[0]
     ADA_CON2 = lists[10].split("\t2:")[1].split("\t3")[0]
@@ -99,19 +77,31 @@ def ac703n_audio_config(lists):
     ADA_CON4 = lists[10].split("\t4:")[1].split("\t5")[0]
     ADA_CON5 = lists[10].split("\t5:")[1].split("  6:")[0]
     ADA_CON6 = lists[10].split("  6:")[1].split(" 7:")[0]
-    ADA_CON7 = lists[10].split(" 7:")[1].split(" 8:")[0]
-    ADA_CON8 = lists[10].split(" 8:")[1]
-    
+    ADA_CON7 = lists[10].split(" 7:")[1].split(" 8:")[0] 
+    ADA_CON8 = lists[10].split(" 8:")[1]   
     ADDA_CON0 = lists[11].split("CON 0:")[1].split("\t1:")[0]
     ADDA_CON1 = lists[11].split("\t1:")[1]
     
     print("ADC位宽=" + ADC_Bitwidth)
-
+    show_AGain(DAA_CON1)
     print("-------ac703--------")
     
 #
 
-def show_config(chip_version):
+def str2bin(data_str):
+    data = bin(int(data_str,16)).split("0b")[1].zfill(16)
+    return data 
+
+def show_AGain(again):
+    # 4通道模拟增益显示值
+    FL_AGain = again_tab.get(str2bin(again)[13:])
+    FR_AGain = again_tab.get(str2bin(again)[9:12])
+    RL_AGain = again_tab.get(str2bin(again)[5:8])
+    RR_AGain = again_tab.get(str2bin(again)[1:4])
+    print("Analog Gain")
+    print("FL Channel:  %s"%FL_AGain + "\tFR Channel:  %s"%FR_AGain + "\tRL Channel:  %s"%RL_AGain + "\tRR Channel:  %s"%RR_AGain)    
+  
+def get_config(chip_version):
     if '701' in chip_version:
         jl701n_audio_config(list_audio_configs)
         return
@@ -135,7 +125,7 @@ with open('log.txt','r')as f:
             version_begin = False
         if audio_flag in line:
             audio_config_begin = True       
-            print('第' + str(count) + '行')
+            # print('第' + str(count) + '行')
             continue
         if audio_config_begin:
             if get_len >= len_max:
@@ -148,4 +138,4 @@ with open('log.txt','r')as f:
                 audio_config_begin = False
 
 
-show_config(string_version)
+get_config(string_version)
