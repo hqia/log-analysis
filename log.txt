@@ -1,0 +1,550 @@
+[02:12:13.144] NULL 
+[00:00:00.100]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[00:00:00.100]         setup_arch Dec 14 2023 12:40:55
+[00:00:00.100]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[00:00:00.100][CLOCK][-------------Clock Dump-----------]
+[00:00:00.100][CLOCK]---ID 6901      Ver B
+[00:00:00.100][CLOCK]-PLL REF OSC CLK : 24000000
+[00:00:00.100][CLOCK]-PLL TARGET CLOCK 192000000
+[00:00:00.100][CLOCK]-PLL SYS SRC : SYS_PLL_D1P0
+[00:00:00.100][CLOCK]-PLL 96M SRC : SYS_PLL_D2P0
+[00:00:00.100][CLOCK]-STD 48M SEL : BTOSC_X2
+[00:00:00.100][CLOCK]--PLL0_D1P0 f1_OE : 1
+[00:00:00.100][CLOCK]--PLL0_D1P5 f2_OE : 0
+[00:00:00.100][CLOCK]--PLL0_D2P0 f3_OE : 1
+[00:00:00.100][CLOCK]--PLL0_D2P5 f4_OE : 0
+[00:00:00.100][CLOCK]--PLL0_D3P5 f5_OE : 0
+[00:00:00.100][CLOCK]--PLL1_D1P0 f1_OE : 1
+[00:00:00.100][CLOCK]--PLL1_D1P5 f2_OE : 0
+[00:00:00.100][CLOCK]--PLL1_D2P0 f3_OE : 0
+[00:00:00.100][CLOCK]--PLL1_D2P5 f4_OE : 0
+[00:00:00.100][CLOCK]--PLL1_D3P5 f5_OE : 0
+[00:00:00.100][CLOCK]--UART CLK : 24000000
+[00:00:00.100][CLOCK]---HSB CLK : 96000000
+[00:00:00.100][CLOCK]---LSB CLK : 48000000
+[00:00:00.100][CLOCK]---XIP CLK : 48000000
+[00:00:00.100][CLOCK]---PLL_DIV : 1 * 2
+[00:00:00.100][CLOCK]---SYS DVDD : 0 / 9 9
+[00:00:00.100][CLOCK]---RAM DVDD : 9 / 9
+[00:00:00.100][CLOCK]---VDC13    : 10 / 10
+[00:00:00.100][CLOCK]---RANGE    : 1
+[00:00:00.100][CLOCK]SPI DIV  : 1
+[00:00:00.100][CLOCK]SFC_CON  : 002802b5
+[00:00:00.100][CLOCK]SFC_QCNT  : 0000001f
+[00:00:00.100][CLOCK]SYS_DIV  : 00000100
+[00:00:00.100][CLOCK]CLK_CON0 : 00000231
+[00:00:00.100][CLOCK]CLK_CON1 : 00001645
+[00:00:00.100][CLOCK]CLK_CON2 : 00000000
+[00:00:00.100][CLOCK]PLL_CON  : 188929b3
+[00:00:00.100][CLOCK]PLL_CON1 : 00000400
+[00:00:00.100][CLOCK]PLL_CON2 : 00000006
+[00:00:00.100][CLOCK]PLL_CON3 : 00000305
+[00:00:00.100][CLOCK]PLL_CON4 : 00000000
+[00:00:00.100][CLOCK]PLL1_CON  : 40000000
+[00:00:00.100][CLOCK]PLL1_CON1 : 00000000
+[00:00:00.100][CLOCK]PLL1_CON2 : 00000000
+[00:00:00.100][CLOCK]PLL1_CON3 : 00000201
+[00:00:00.100][CLOCK]PLL1_CON4 : 00000000
+[00:00:00.100][0-MSYS]--Reset Source : 0x1
+[00:00:00.100]MSYS_P11_RST
+[00:00:00.100][1-P11]--Reset Source : 0x40
+[00:00:00.100]P11_P33_RST
+[00:00:00.100][2-P33]--Reset Source : 0x1
+[00:00:00.100]P33_VDDIO_POR_RST
+[00:00:00.100]err priority 7 : priority 6 is reserved fot GIEMASK
+[00:00:00.100]SSP_H : 0x103840
+[00:00:00.100]SSP_L : 0x102840
+[00:00:00.100]pc_limit0: 0x0 ~ 0x7ffffff
+[00:00:00.100]pc_limit1: 0x109800 ~ 0x1232a4
+[00:00:00.100]pc_limit2: 0x4 ~ 0x20000
+[00:00:00.100]task: app_core, tcb @ 0x4189cc
+[00:00:00.100]create_task app_core : stack:(0x400400,0x400ffc)
+[00:00:00.100]create_task idle0 : stack:(0x401000,0x4017fc)
+[00:00:00.100]err priority 7 : priority 6 is reserved fot GIEMASK
+[00:00:00.100]err priority 7  priority 6 is reserved fot GIEMASK
+[00:00:00.100]err priority 7 : priority 6 is reserved fot GIEMASK
+[00:00:00.100]SSP_H : 0x104840
+[00:00:00.100]SSP_L : 0x103840
+[00:00:00.100]pc_limit0: 0x0 ~ 0x7ffffff
+[00:00:00.100]pc_limit1: 0x109800 ~ 0x1232a4
+[00:00:00.100]pc_limit2: 0x4 ~ 0x20000
+[00:00:00.100]create_task idle1 : stack:(0x401800,0x401ffc)
+[00:00:00.110]=================Version===============
+[00:00:00.110]JL701n_V100-@20231120-$e0e795d
+[00:00:00.110]=======================================
+[00:00:00.111]gpio_cfg_at_power_on
+[00:00:00.111][SDFILE]VM size: 0xd5000 @ 0x129000
+[00:00:00.112]JL_SFC->UNENC_ADRL 0x6127000
+[00:00:00.112]JL_SFC->UNENC_ADRL 0x7ffffff
+[00:00:00.113][SDFILE]disk capacity 2048 KB
+[00:00:00.113][SDFILE]last file_addr:12713f 1cf0
+[00:00:00.113][SDFILE]end_addr:129000
+49 53 44 55 04 02 43 FF 8B 49 D5 5B D0 60 FF FF 
+[00:00:00.123][SDFILE]Open 0x60947e8, [mnt/sdfile/boot/otp_cfg] Fail! (>_<)
+[00:00:00.124]flash info not found!
+[00:00:00.124][VM]vm_info:addr:0x129000, len:0x8000, mode:0x0
+[00:00:00.128]power config
+[00:00:00.133]P11_HEAP_BEGIN = 0xf23c8c
+[00:00:00.133]P11_HEAP_SIZE = 0x3a74
+[00:00:00.134]task: pmu_task, tcb @ 0x418dc4
+[00:00:00.134]create_task pmu_task : stack:(0x402000,0x4023fc)
+[00:00:00.135]P11_SYSTEM->MEM_PWR_CON: 0x0, M2P_MEM_CONTROL: 0x3f
+[00:00:00.136][P33]P3_WKUP_EN0        is 0x2
+[00:00:00.136][P33]P3_WKUP_EN1        is 0x0
+[00:00:00.136][P33]P3_WKUP_EDGE0      is 0x5f
+[00:00:00.137][P33]P3_WKUP_EDGE1      is 0xf
+[00:00:00.137][P33]P3_WKUP_LEVEL0     is 0xfd
+[00:00:00.137][P33]P3_WKUP_LEVEL1     is 0xf
+[00:00:00.137][P33]P3_WKUP_PND0       is 0x0
+[00:00:00.138][P33]P3_WKUP_PND1       is 0x0
+[00:00:00.138][P33]P3_AWKUP_EN        is 0x7
+[00:00:00.138][P33]P3_AWKUP_P_IE      is 0x7
+[00:00:00.139][P33]P3_AWKUP_N_IE      is 0x3
+[00:00:00.139][P33]P3_AWKUP_LEVEL     is 0x0
+[00:00:00.139][P33]P3_AWKUP_P_PND     is 0x0
+[00:00:00.140][P33]P3_AWKUP_N_PND     is 0x0
+[00:00:00.140][P33]P3_AWKUP_FLT0      is 0x5
+[00:00:00.140][P33]P3_AWKUP_FLT1      is 0x5
+[00:00:00.140][P33]P3_AWKUP_FLT2      is 0x7
+[00:00:00.141][P33]P3_AWKUP_INSEL     is 0x0
+[00:00:00.141][P33]P3_PORT_SEL0     is 0x12
+[00:00:00.141][P33]P3_PORT_SEL1     is 0x12
+[00:00:00.142][P33]P3_PORT_SEL2     is 0x31
+[00:00:00.142][P33]P3_PORT_SEL3     is 0x10
+[00:00:00.142][P33]P3_PORT_SEL4     is 0x17
+[00:00:00.142][P33]P3_PORT_SEL5     is 0x8
+[00:00:00.143][P33]P3_PORT_SEL6     is 0x1b
+[00:00:00.143][P33]P3_PORT_SEL7     is 0x8
+[00:00:00.143][P33]P3_PORT_SEL8     is 0x1d
+[00:00:00.144][P33]P3_PORT_SEL9     is 0x29
+[00:00:00.144][P33]P3_PORT_SEL10    is 0x8
+[00:00:00.144][P33]P3_PORT_SEL11    is 0x2f
+[00:00:00.144][P33]P3_APORT_SEL0   is 0x2
+[00:00:00.145][P33]P3_APORT_SEL1   is 0x1
+[00:00:00.145][P33]P3_APORT_SEL2   is 0x1a
+[00:00:00.145]lvd_con = 0xbd
+[00:00:00.146]trim = 0x0
+[00:00:00.146]trim: 0, wvdd_lev: 3, v: 0, err: 0
+[00:00:00.146]trim: 0, pvdd_vol_ref: 0, pvdd_level_high_now_trim: 13, pvdd_level_sleep_trim: 10, pvdd_level_lev_l_trim: 3, err: 0
+[00:00:00.147]miovdd_lev = 6
+[00:00:00.147]wiovdd_lev = 6
+[00:00:00.148]type = 10000,ch = 0
+[00:00:00.148]add sample ch 0x10000, i = 0
+[00:00:00.148]type = 10000,ch = 6
+[00:00:00.148]add sample ch 0x10006, i = 1
+[00:00:00.149]type = 10000,ch = 4
+[00:00:00.149]add sample ch 0x10004, i = 2
+[00:00:00.150]LDOREF = 255
+[00:00:00.152]vbat = 5124 mv
+[00:00:00.153]dtemp = 983 mv
+[00:00:00.174]led hw config, len: 0xc
+05 54 9A 44 4F 01 05 01 3F 44 4F 00 
+[00:00:00.175]led state config, len: 0x2a9
+[00:00:00.175]audio_init
+[00:00:00.176]audio_input_initcall
+[00:00:00.176] audio_adc_file_init len 40, sizeof(cfg) 40
+[00:00:00.177] audio_linein_file_init len 38, sizeof(cfg) 38
+[00:00:00.177] adc_f.cfg.linein_en_map = 3
+[00:00:00.178] adc_f.cfg.linein_det_en = 1
+[00:00:00.178] adc_f.cfg.param[0].linein_mode      = 0
+[00:00:00.178] adc_f.cfg.param[0].linein_gain      = 4
+[00:00:00.179] adc_f.cfg.param[0].linein_pre_gain  = 0
+[00:00:00.179] adc_f.cfg.param[0].linein_ain_sel   = 1
+[00:00:00.179] adc_f.cfg.param[0].linein_dcc       = 14
+[00:00:00.180] adc_f.cfg.param[1].linein_mode      = 0
+[00:00:00.180] adc_f.cfg.param[1].linein_gain      = 4
+[00:00:00.180] adc_f.cfg.param[1].linein_pre_gain  = 0
+[00:00:00.181] adc_f.cfg.param[1].linein_ain_sel   = 1
+[00:00:00.181] adc_f.cfg.param[1].linein_dcc       = 14
+[00:00:00.181] adc_f.cfg.param[2].linein_mode      = 0
+[00:00:00.182] adc_f.cfg.param[2].linein_gain      = 4
+[00:00:00.182] adc_f.cfg.param[2].linein_pre_gain  = 0
+[00:00:00.182] adc_f.cfg.param[2].linein_ain_sel   = 1
+[00:00:00.183] adc_f.cfg.param[2].linein_dcc       = 14
+[00:00:00.183] adc_f.cfg.param[3].linein_mode      = 0
+[00:00:00.183] adc_f.cfg.param[3].linein_gain      = 4
+[00:00:00.184] adc_f.cfg.param[3].linein_pre_gain  = 0
+[00:00:00.184] adc_f.cfg.param[3].linein_ain_sel   = 1
+[00:00:00.184] adc_f.cfg.param[3].linein_dcc       = 14
+[00:00:00.185]audio_dac_initcall
+[00:00:00.185][AUDIO-DAC]audio_dac_init
+[00:00:00.185]>>>> buf time:50ms, buf_len : 9600
+[00:00:00.186]vm no CFG_VOLUME_ENHANCEMENT_MODE !
+[00:00:00.186][APP_AUDIO]DAC_DTB NULL,use fast feedback
+70 72 6F 64 75 63 74 5F 66 61 73 74 5F 74 65 73 
+74 00 00 00 00 00 00 00 00 00 00 00 
+[00:00:00.187]product_test_name:product_fast_test
+6C 65 5F 61 75 64 69 6F 5F 73 6F 75 6E 64 62 61 
+72 00 00 00 00 00 00 00 00 00 00 00 
+[00:00:00.188]pair_name:le_audio_soundbar
+[00:00:00.189][USER_CFG]bt name config:soundbar
+[00:00:00.189][USER_CFG]read pair code err
+[00:00:00.189][USR_CFG]tws pair code config:
+88 88 
+[00:00:00.190][USER_CFG]rf config:7
+[00:00:00.190][USER_CFG]aec config:
+[00:00:00.190][USER_CFG]sms_ans config:
+[00:00:00.191][USER_CFG]aec cfg read err,use default value
+[00:00:00.191][USER_CFG]aec_cfg mic_gain:6 mic1_gain:6 dac_gain:0
+[00:00:00.191][USER_CFG]mic_bias_res:0
+[00:00:00.192][USER_CFG]mic_bias_adjust NULL
+[00:00:00.192][USER_CFG]mic_ldo_vsel_adjust NULL
+[00:00:00.193]vol_init call 10, music 50, tone 10
+[00:00:00.194][USER_CFG]warning_tone_v:3700 poweroff_tone_v:3600
+[00:00:00.194][USER_CFG]auto_off_time:0
+[00:00:00.194][USER_CFG]read music play mode err
+[00:00:00.195][USER_CFG]
+ app_var.cycle_mode:[0] set to [1]
+[00:00:00.195][USER_CFG]
+ default scene 0 
+[00:00:00.195][USER_CFG]
+ default eq0 cfg 0 
+[00:00:00.196][USER_CFG]mac:
+11 7F 4F 68 30 4D 
+[00:00:00.196]adkey info len: 60
+[00:00:00.196]key_numbers: 10
+[00:00:00.197]adkey_pin: 17
+[00:00:00.197]extern_up_en: 1
+[00:00:00.197]pull_up_value: 220
+[00:00:00.197]ad_channel: 1048582
+[00:00:00.197]long_press_enable:0 time:8s
+[00:00:00.198]ADkey:0,judge_advalue:61,key_value:10
+[00:00:00.198]ADkey:1,judge_advalue:173,key_value:11
+[00:00:00.198]ADkey:2,judge_advalue:261,key_value:12
+[00:00:00.199]ADkey:3,judge_advalue:356,key_value:13
+[00:00:00.199]ADkey:4,judge_advalue:473,key_value:14
+[00:00:00.199]ADkey:5,judge_advalue:573,key_value:15
+[00:00:00.200]ADkey:6,judge_advalue:663,key_value:16
+[00:00:00.200]ADkey:7,judge_advalue:776,key_value:17
+[00:00:00.200]ADkey:8,judge_advalue:884,key_value:18
+[00:00:00.201]ADkey:9,judge_advalue:976,key_value:19
+[00:00:00.201]type = 100000,ch = 6
+[00:00:00.201]add sample ch 0x100006, i = 3
+[00:00:00.202][UPDATE]update module init ok
+[00:00:00.202][TEST-UPDATE]testbox msg handle reg:600592c
+[00:00:00.202]audio_online_debug_open
+[00:00:00.203]task: jlstream, tcb @ 0x419068
+[00:00:00.203]create_task jlstream : stack:(0x402400,0x402ffc)
+[00:00:00.210][CLOCK]---HSB CLK : 192000000
+[00:00:00.210][CLOCK]---LSB CLK : 64000000
+[00:00:00.210][CLOCK]---XIP CLK : 64000000
+[00:00:00.210][CLOCK]---PLL_DIV : 1 * 1
+[00:00:00.211][CLOCK]---SYS DVDD : 0 / 13 13
+[00:00:00.211][CLOCK]---RAM DVDD : 13 / 13
+[00:00:00.211][CLOCK]---VDC13    : 11 / 11
+[00:00:00.211][CLOCK]---RANGE    : 3
+[00:00:00.202]usb_stack_init()
+[00:00:00.202]task: usb_stack, tcb @ 0x4191c8
+[00:00:00.202]create_task usb_stack : stack:(0x403000,0x4037fc)
+[00:00:00.203]task: dev_mg, tcb @ 0x4192e0
+[00:00:00.203][USB]OTG_info0: 1 3 fa
+[00:00:00.203]create_task dev_mg : stack:(0x403800,0x403ffc)
+[00:00:00.204][USB]OTG_cnt0: 3 2 2 3
+[00:00:00.204][SD]sd0 init !
+[00:00:00.204]sd io init !
+[00:00:00.205]sdfile add start
+[00:00:00.205]dev_manager_add can not find logo sdfile
+[00:00:00.205]==========================   
+
+[00:00:00.206][LED7] led7_init
+[00:00:00.206]led7_timer_init
+[00:00:00.206]err priority 7 : priority 6 is reserved fot GIEMASK
+[00:00:00.206]led7 timer id:2
+[00:00:00.207]task: ui, tcb @ 0x41962c
+[00:00:00.207]create_task ui : stack:(0x404000,0x404ffc)
+[00:00:00.207][APP-UPDATE]<--------update_result_deal=0x5a00 b080--------->
+[00:00:00.208]=================update_param_len:1000
+[00:00:00.208]vbat: 5124
+[00:00:00.208]vbat: 5124
+[00:00:00.209]vbat: 5124
+[00:00:00.209]vbat: 5124
+[00:00:00.209]vbat: 5124
+[00:00:00.209]vbat: 5124
+[00:00:00.209]vbat: 5124
+[00:00:00.209]vbat: 5124
+[00:00:00.210]vbat: 5124
+[00:00:00.210]vbat: 5124
+[00:00:00.210]vbat: 5124
+[00:00:00.210][BATTERY]percent: 0, voltage: 3300 mV
+[00:00:00.210][BATTERY]percent: 5, voltage: 3450 mV
+[00:00:00.211][BATTERY]percent: 10, voltage: 3680 mV
+[00:00:00.211][BATTERY]percent: 20, voltage: 3740 mV
+[00:00:00.211][BATTERY]percent: 30, voltage: 3770 mV
+[00:00:00.212][BATTERY]percent: 40, voltage: 3790 mV
+[00:00:00.212][BATTERY]percent: 50, voltage: 3820 mV
+[00:00:00.212][BATTERY]percent: 60, voltage: 3870 mV
+[00:00:00.213][BATTERY]percent: 70, voltage: 3920 mV
+[00:00:00.213][BATTERY]percent: 80, voltage: 3980 mV
+[00:00:00.213][BATTERY]percent: 90, voltage: 4060 mV
+[00:00:00.213][BATTERY]percent: 100, voltage: 4120 mV
+[00:00:00.214][APP_IDLE]power on
+[00:00:00.214]tone_player: tone_zh/power_on.*
+[00:00:00.215]pipeline_uuid: 7674
+
+[00:00:00.215][STREAM]create_stream: 419ce0, 0
+[00:00:00.216]demuxer_not_match: power_on.mp3
+[00:00:00.217]source_fmt: 14, 16000
+[00:00:00.218]ui led7_MODE:2
+[00:00:00.218]pwm led normal status:1
+[00:00:00.218]led_ui_do_display: uuid: 0xa6a4
+[00:00:00.219][AUDIO-DAC]sample 44100
+[00:00:00.219]led_ui_period_action_display_try: ret = -2
+[00:00:00.219][AUDIO-DAC]sample 44100
+[00:00:00.220]current_state_loop = 0
+[00:00:00.220][AUDIO-DAC]sample 44100
+[00:00:00.220][STREAM]negotiation: deal
+[00:00:00.221]task: jlstream_0, tcb @ 0x41e50c
+[00:00:00.221]create_task jlstream_0 : stack:(0x405000,0x405bfc)
+[00:00:00.221]task: jlstream_1, tcb @ 0x41e5a4
+[00:00:00.222]create_task jlstream_1 : stack:(0x405c00,0x4067fc)
+[00:00:00.222]volume_ioc_start bit_wide, 0 0 15
+[00:00:00.223]volume_ioc_start len 16, sizeof(cfg) 16
+[00:00:00.223]vol read config ok :16,-45,0,1,0
+[00:00:00.224]vol param:2063,(300/100)dB,cur:10,max:16,(-1800/100)dB
+[00:00:00.224]audio_state:idle->tone,max_vol:16
+[00:00:00.224]set_vol[tone]:tone=10
+[00:00:00.225][fade]state:tone,max_volume:16,cur:10,10
+[00:00:00.225]set_vol[tone]:=10
+[00:00:00.225][SW_DVOL]Gain:10,AVOL:3,DVOL:16384
+[00:00:00.226]audio_syncts_node_start bit_wide, 0 0 15
+[00:00:00.226]sync network 1
+[00:00:00.226]audio syncts node start : 0,  1, 16000, 44100
+[00:00:00.227][STREAM]send_callback_err: app_core, 8, 0
+[00:00:00.228]tone_callback: 8, 0
+[00:00:00.230][AUDIO-DAC]fifo init : 0x19ae80 0x960 0x0 0x0 0x95f
+[00:00:00.230][AUDIO-DAC]dac set output channel : 2,bit_width:16
+[00:00:00.231][AUDIO-DAC]DAC LR OUTPUT
+[00:00:00.231][AUDIO-DAC]DAC MONO LR DIFF
+[00:00:00.274]cur_voltage: 5124 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
+
+[00:00:00.362]dac analog init!!! 3
+[00:00:00.362][AUDIO-DAC]delay set : 2204, 108, 880
+U
+[00:00:00.363][AUDIO-DAC]audio_dac_fifo_start : 0x0, 10, DAC_CON = 0x825e195
+[00:00:00.456][SD]sd0 status = 1
+[00:00:00.456]sd dev msg 53443000, 0, 609107a
+[00:00:00.457]DEVICE_EVENT_FROM_SD0
+[00:00:00.457]DEVICE_EVENT_IN
+[00:00:00.457]sd0 add start
+[00:00:00.457][SD]sd0 open !
+[00:00:00.780][SD]sd is 2.0 SDHC !
+[00:00:00.782][SD]sd init step 1 is success !
+[00:00:00.791][SD]sd support high speed !
+[00:00:00.791][SD]sd support 4 bit mode !
+[00:00:00.803][SD]sd set high speed mode success !
+[00:00:00.804][SD]sd init step 2 is success !
+[00:00:00.804][SD]sd capacity  =  125173760sector  -->  61120M
+
+[00:00:00.810]__fat_mount: capacity = 7760000
+[00:00:00.810]__fat_mount: block_size = 512
+[00:00:00.817]__dev_manager_add, sd0 add ok, dev->fmnt = 41ec30,  0
+
+[00:00:00.817]not music mode 
+
+[00:00:00.817]update_path: storage/sd0/C/*.UFW
+[00:00:00.857]open update file err!!!
+[00:00:01.076][STREAM]dec_err: 48
+[00:00:01.101][STREAM]dec_end: 0
+U
+[00:00:01.140][AUDIO-DAC]DAV VOL0 : 0x40004000
+[00:00:01.140][AUDIO-DAC]dac off
+[00:00:01.141][STREAM]send_callback_err: app_core, 10, 0
+[00:00:01.141]tone_callback: a, 0
+[00:00:01.141][STREAM]free_stream: 419ce0
+[00:00:01.142][STREAM]decoder_release: 419e4c
+[00:00:01.142][STREAM]release: jlstream 20
+[00:00:01.143][APP_IDLE]exit power on mode
+[00:00:01.143]bt_code_size:2620
+[00:00:01.143]Current free heap 547200 bytes, minimum ever free heap 521212 bytes, physics memory size 476544 bytes
+[00:00:01.144]bt_code_run_addr:0x197b80
+[00:00:01.144]Current free heap 547132 bytes, minimum ever free heap 521212 bytes, physics memory size 473856 bytes
+[00:00:01.145]tone_player: tone_zh/bt.*
+[00:00:01.146]pipeline_uuid: 7674
+
+[00:00:01.146][STREAM]create_stream: 419d2c, 0
+[00:00:01.147]demuxer_not_match: bt.mp3
+[00:00:01.148]source_fmt: 14, 16000
+[00:00:01.149][0]:0 
+[00:00:01.149][1]:6 
+[00:00:01.149][AUDIO-DAC]sample 44100
+[00:00:01.150][2]:12 
+[00:00:01.150][AUDIO-DAC]sample 44100
+[00:00:01.150][3]:18 
+[00:00:01.150][AUDIO-DAC]sample 44100
+[00:00:01.151][4]:25 
+[00:00:01.151][STREAM]negotiation: deal
+[00:00:01.151][5]:31 
+[00:00:01.152]task: jlstream_0, tcb @ 0x41e54c
+[00:00:01.152][6]:37 
+[00:00:01.152]create_task jlstream_0 : stack:(0x405000,0x405bfc)
+[00:00:01.153][7]:43 
+[00:00:01.153]task: jlstream_1, tcb @ 0x41e5e4
+[00:00:01.153][8]:50 
+[00:00:01.154]create_task jlstream_1 : stack:(0x405c00,0x4067fc)
+[00:00:01.154][9]:56 
+[00:00:01.154][10]:62 
+[00:00:01.155]volume_ioc_start bit_wide, 0 0 15
+[00:00:01.155][11]:68 
+[00:00:01.155]volume_ioc_start len 16, sizeof(cfg) 16
+[00:00:01.156][12]:75 
+[00:00:01.156]vol read config ok :16,-45,0,1,0
+[00:00:01.156][13]:81 
+[00:00:01.157]vol param:2063,(300/100)dB,cur:10,max:16,(-1800/100)dB
+[00:00:01.157][14]:87 
+[00:00:01.157]audio_state:idle->tone,max_vol:16
+[00:00:01.158][15]:93 
+[00:00:01.158]set_vol[tone]:tone=10
+[00:00:01.158][16]:100 
+[00:00:01.158][fade]state:tone,max_volume:16,cur:10,10
+[00:00:01.159]-----edr + ble 's address-----
+[00:00:01.159]set_vol[tone]:=10
+
+11 7F 4F 68 30 4D 
+[00:00:01.160][SW_DVOL]Gain:10,AVOL:3,DVOL:16384
+
+11 7F 4F 68 30 4D 
+[00:00:01.160]le_support:3 1
+[00:00:01.160]audio_syncts_node_start bit_wide, 0 0 15
+[00:00:01.161]le_config:2 0 0 0
+[00:00:01.161]sync network 1
+[00:00:01.161][LMP]>>>btctrler_task_init<<<
+[00:00:01.162]audio syncts node start : 0,  1, 16000, 44100
+[00:00:01.162]task: btctrler, tcb @ 0x41eca8
+[00:00:01.162]create_task btctrler : stack:(0x406800,0x406ffc)
+[00:00:01.163][STREAM]send_callback_err: app_core, 8, 0
+[00:00:01.165][AUDIO-DAC]fifo init : 0x19ae80 0x960 0x0 0x0 0x95f
+[00:00:01.165][AUDIO-DAC]dac set output channel : 2,bit_width:16
+[00:00:01.165][AUDIO-DAC]DAC LR OUTPUT
+[00:00:01.166][AUDIO-DAC]DAC MONO LR DIFF
+[00:00:01.166][AUDIO-DAC]delay set : 2204, 108, 880
+U
+[00:00:01.166][AUDIO-DAC]audio_dac_fifo_start : 0x0, 10, DAC_CON = 0x825e195
+[00:00:01.184][HCI_LMP]init
+[00:00:01.184][HCI_LMP]open
+[00:00:01.185]bredr_bd_init
+[00:00:01.185]bredr_bd_init_success
+[00:00:01.186]task: btstack, tcb @ 0x4294f0
+[00:00:01.186]create_task btstack : stack:(0x407000,0x407bfc)
+[00:00:01.186][HCI_LMP]local_name soundbar
+[00:00:01.187]bt_app_msg type:0x3d
+[00:00:01.187][HCI_LMP]32 9
+[00:00:01.187]unknow msg type:61
+[00:00:01.188][LMP]HCI_WRITE_SCAN_ENABLE : 0
+[00:00:01.188]tone_callback: 8, 1
+[00:00:01.188]bt_app_msg00:00:01.189]unknow msg type:60
+[00:00:01.189]ui led7_MODE:3
+[00:00:01.189][SOUNDBOX]BT_STATUS_INIT_OK
+
+[00:00:01.189]<error> [APP_LE_CONNECTED]app_connected_deal,cur_deal_scene not be modified:0
+[00:00:01.190][APP_LE_CONNECTED]connected_open
+[00:00:01.190]sdu_interval:10000
+[00:00:01.191]tx_latency:0
+
+[00:00:01.191]rtnCToP:4
+[00:00:01.191]rtnPToC:4
+[00:00:01.192]mtlCToP:1
+[00:00:01.192]mtlPToC:1
+[00:00:01.192]bitrate:64000
+[00:00:01.192]nch:1
+[00:00:01.193]frame_len:100
+[00:00:01.193]sample_rate:48000
+[00:00:01.193]coding_type:0x20000000
+[00:00:01.193]cis0.pri_ch:
+00 00 00 00 00 00 00 00 
+[00:00:01.194]cis1.pri_ch:
+00 00 00 00 00 00 00 00 
+[00:00:01.194][LE_CONNECTED]--func=connected_init
+[00:00:01.195][APP]>>>>>>>>>>>>>>>>>>>>>>>>>>>
+[00:00:01.195][APP]----  cig central init  ---
+[00:00:01.195][APP]<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[00:00:01.195][LE_CONNECTED]--func=connected_central_open
+[00:00:01.197]dual_conn BT_STATUS_INIT_OK
+[00:00:01.197][APP]Set cis[0] hdl=0x60
+[00:00:01.198][APP]Set cis[1] hdl=0x61
+[00:00:01.198]page_state: 0, 0
+[00:00:01.199][LMP]HCI_WRITE_SCAN_ENABLE : 3
+[00:00:01.199][PHONECALL] BT STATUS DEFAULT
+[00:00:01.199]bt_event_happen: 3
+[00:00:01.200]bt_event_happen: 3
+[00:00:01.200]pwm led normal status:4
+[00:00:01.200]led_ui_do_display: uuid: 0x2383
+[00:00:01.201]led_ui_period_action_display_try: ret = 0
+[00:00:01.201]bt_app_msg type:0x47
+[00:00:01.202]unknow msg type:71
+[00:00:01.205][USB]usb state change[0] 0---->3
+[00:00:01.209]inquiry_scan: soundbar
+
+11 7F 4F 68 30 4D 
+[00:00:01.209][BDMGR]sort_0_edrI
+[00:00:01.210]page_scan_enable
+
+11 7F 4F 68 30 4D 
+[00:00:01.210][BDMGR]sort_0_edrP
+[00:00:01.455][USB]usb state change[0] 3---->5
+[00:00:01.455]CDC is running in the background
+[00:00:01.456][USB]zalloc: usb_config_var = 42c4f4
+[00:00:01.485][APP]remoter_name: CRwh1128 8
+[00:00:01.577]<error> [USB]usb reset
+[00:00:01.577][USB]cdc_reset
+[00:00:01.577]usb_g_ep_config() 84 19a200 64
+[00:00:01.577]usb_g_ep_config() 4 184d00 64
+[00:00:01.664]<error> [USB]usb rese
+[00:00:01.665][USB]cdc_reset
+[00:00:01.665]usb_g_ep_config() 84 19a200 64
+[00:00:01.665]usb_g_ep_config() 4 184d00 64IP
+[00:00:02.452][STREAM]dec_err: 48
+[00:00:02.477][STREAM]dec_end: 0
+U
+[00:00:02.510][AUDIO-DAC]DAV VOL0 : 0x40004000
+[00:00:02.510][AUDIO-DAC]dac off
+[00:00:02.511][STREAM]send_callback_err: app_core, 10, 0
+[00:00:02.511]tone_callback: a, 1
+[00:00:02.511][STREAM]free_stream: 419d2c
+[00:00:02.512][STREAM]decoder_release: 419e90
+[00:00:02.512][STREAM]release: jlstream 20
+[00:00:02.512]pipeline_uuid: 7674
+[00:00:00.110]=================Version===============
+[00:00:00.110]JL701n_V100-@20231120-$e0e795d
+[00:00:00.110]=======================================
+[00:00:02.513][STREAM]create_stream: 419ce0, 0
+[00:00:02.514]demuxer_not_match: 
+[00:00:02.514][STREAM]free_stream: 419ce0
+[00:00:02.515][STREAM]decoder_release: 419e4c
+[00:00:02.515][STREAM]release: jlstream 20
+[00:00:02.516]TONE_INDEX_CONNECTED_OPEN
+[00:00:02.516]__try_play_next_tone
+
+[00:00:03.187]>>Audio_Config_Trace:
+[00:00:03.187][ADC]BitWidth:16,DCC:0,0,0,0
+[00:00:03.187][ADC]Gain(Max:19):0,0,0,0,6dB_Boost:0,0,0,0,
+[00:00:03.188][DAC]BitWidth:16,DCC:14
+[00:00:03.188][DAC]AGain(Max:7):7,7,DGain(Max:16384):16384,16384
+[00:00:03.188]JL_WL_AUD CON0:1
+[00:00:03.188]AUD_CON:100
+[00:00:03.189]DAC_CON:22222223
+[00:00:03.189]ADC_CON:0
+[00:00:03.189]ADC_CON1:0
+[00:00:03.189]DAC_VL0:22222222
+[00:00:03.189]DAC_TM0:0
+[00:00:03.190]DAA_CON 0:9d953a37 	1:77,	2:1e9ba6,	3:32000    7:7ff
+[00:00:03.190]ADA_CON 0:0	1:0	2:0	3:0	4:0	5:0	6:0	7:0	8:0
+IP
+[00:00:03.583][APP]remoter_name: CRwh1128 8IPIPI
+[00:00:05.225][APP_AUDIO]VOL_SAVE 50
+[00:00:00.110]=================Version===============
+[00:00:00.110]JL703n_V100-@20231120-$e0e795d
+[00:00:00.110]=======================================
+[00:00:03.187]>>Audio_Config_Trace:
+[00:00:03.187][ADC]BitWidth:16,DCC:0,0,0,0
+[00:00:03.187][ADC]Gain(Max:19):0,0,0,0,6dB_Boost:0,0,0,0,
+[00:00:03.188][DAC]BitWidth:16,DCC:14
+[00:00:03.188][DAC]AGain(Max:7):7,7,DGain(Max:16384):16384,16384
+[00:00:03.188]JL_WL_AUD CON0:1
+[00:00:03.188]AUD_CON:100
+[00:00:03.189]DAC_CON:99999999
+[00:00:03.189]ADC_CON:0
+[00:00:03.189]ADC_CON1:0
+[00:00:03.189]DAC_VL0:88888888
+[00:00:03.189]DAC_TM0:0
+[00:00:03.190]DAA_CON 0:9d953a37 	1:77,	2:1e9ba6,	3:32000    7:7ff
+[00:00:03.190]ADA_CON 0:0	1:0	2:0	3:0	4:0	5:0	6:0	7:0	8:0
