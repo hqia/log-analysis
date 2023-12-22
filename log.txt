@@ -1,307 +1,429 @@
+[00:00:00.100]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[00:00:00.100]         setup_arch Dec 21 2023 19:39:28
+[00:00:00.100]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[00:00:00.100][CLOCK][-------------Clock Dump-----------]
+[00:00:00.100][CLOCK]---ID 730c      Ver M
+[00:00:00.100][CLOCK]-PLL REF OSC CLK : 24000000
+[00:00:00.100][CLOCK]-PLL TARGET CLOCK 240000000
+[00:00:00.100][CLOCK]-PLL SYS SRC 9
+[00:00:00.100][CLOCK]-PLL SYS div 0
+[00:00:00.100][CLOCK]-HSB div 0
+[00:00:00.100][CLOCK]-LSB div 1
+[00:00:00.100][CLOCK]-PLL SYS SRC : SYS_PLL_D1P5
+[00:00:00.100][CLOCK]-PLL 96M SRC : USB_PLL_D2P5
+[00:00:00.100][CLOCK]-STD 48M SEL : PLL_48M
+[00:00:00.100][CLOCK]--USB_D1P0 f1_OE : 1
+[00:00:00.100][CLOCK]--USB_D1P5 f2_OE : 0
+[00:00:00.100][CLOCK]--USB_D2P0 f3_OE : 0
+[00:00:00.100][CLOCK]--USB_D2P5 f4_OE : 1
+[00:00:00.100][CLOCK]--USB_D3P5 f5_OE : 0
+[00:00:00.100][CLOCK]--SYS_D1P0 f1_OE : 0
+[00:00:00.100][CLOCK]--SYS_D1P5 f2_OE : 1
+[00:00:00.100][CLOCK]--SYS_D2P0 f3_OE : 0
+[00:00:00.100][CLOCK]--SYS_D2P5 f4_OE : 0
+[00:00:00.100][CLOCK]--SYS_D3P5 f5_OE : 0
+[00:00:00.100][CLOCK]--UART CLK : 24000000
+[00:00:00.100][CLOCK]---HSB CLK : 160000000
+[00:00:00.100][CLOCK]---LSB CLK : 80000000
+[00:00:00.100][CLOCK]---XIP CLK : 80000000
+[00:00:00.100][CLOCK]---DVDD  : 0 | 4 = 4
+[00:00:00.100][CLOCK]---RVDD  : 4 = 4
+[00:00:00.100][CLOCK]---DCVDD : 8 = 8
+[00:00:00.100][CLOCK]---RANGE : 0 
+[00:00:00.100][CLOCK]SPI DIV  : 1
+[00:00:00.100][CLOCK]SFC_CON  : 004605b5
+[00:00:00.100][CLOCK]SFC_QCNT  : 0000001f
+[00:00:00.100][CLOCK]SYS_DIV  : 00000100
+[00:00:00.100][CLOCK]CLK_CON0 : 0000002b
+[00:00:00.100][CLOCK]CLK_CON1 : 00000000
+[00:00:00.100][CLOCK]CLK_CON2 : 00000209
+[00:00:00.100][CLOCK]USB_PLL_CON0 : 1d8c3ba7
+[00:00:00.100][CLOCK]USB_PLL_CON1 : 0005249a
+[00:00:00.100][CLOCK]USB_PLL_CON2 : 00000150
+[00:00:00.100][CLOCK]USB_PLL_CON3 : 00000000
+[00:00:00.100][CLOCK]USB_PLL_CON4 : 00000000
+[00:00:00.100][CLOCK]SYS_PLL_CON0 : 0004fc37
+[00:00:00.100][CLOCK]SYS_PLL_CON1 : 00000800
+[00:00:00.100][CLOCK]SYS_PLL_CON2 : 00000012
+[00:00:00.100][CLOCK]SYS_PLL_CON3 : 00000702
+[00:00:00.100][CLOCK]SYS_PLL_CON4 : 0000021a
+[00:00:00.100][0-MSYS]--Reset Source : 0x1
+[00:00:00.100]MSYS_P11_RST
+[00:00:00.100][1-P11]--Reset Source : 0x40
+[00:00:00.100]P11_P33_RST
+[00:00:00.100]P33_LEVEL0_RST
+[00:00:00.100]P33_LEVEL1_RST
+[00:00:00.100]P33_LEVEL2_RST
+[00:00:00.100][2-P33]--Reset Source : 0x2
+[00:00:00.100]P33_VDDIO_LVD_RST
+[00:00:00.100]R3_RST_SRC_VDDIO
+[00:00:00.100]err priority 7 : priority 6 is reserved fot GIEMASK
+[00:00:00.100]SSP_H : 0x00103240
+[00:00:00.100]SSP_L : 0x00102a40
+[00:00:00.100]pc_limit0: 0x0 ~ 0x7ffffff
+[00:00:00.100]pc_limit1: 0x107a40 ~ 0x110e30
+[00:00:00.100]pc_limit2: 0x4 ~ 0x20000
+[00:00:00.100]create_task idle0 : stack:(0x400e00,0x4015fc)
+[00:00:00.100]idle : all stack :0x400e00, 0x400e80, 0x700
+[00:00:00.100]err priority 7 : priority 6 is reserved fot GIEMASK
+[00:00:00.100]err priority 7 : priority 6 is reserved fot GIEMASK
+[00:00:00.100]err priority 7 : priority 6 is reserved fot GIEMASK
+[00:00:00.100]SSP_H : 0x00103a40
+[00:00:00.100]SSP_L : 0x00103240
+[00:00:00.100]pc_limit0: 0x0 ~ 0x7ffffff
+[00:00:00.100]pc_limit1: 0x107a40 ~ 0x110e30
+[00:00:00.100]pc_limit2: 0x4 ~ 0x20000
+[00:00:00.100]create_task idle1 : stack:(0x401600,0x401dfc)
+[00:00:00.100]idle : all stack :0x401600, 0x401680, 0x700
 [00:00:00.100]=================Version===============
 [00:00:00.100]ac703n_V113-@20231019-$3d308dd
 [00:00:00.100]=======================================
 [00:00:00.101][SDFILE]VM size: 0xff000 @ 0xff000
+[00:00:00.101][SDFILE]disk capacity 2048 KB
+[00:00:00.101][SDFILE]last file_addr:fc2b2 24f0
+[00:00:00.102][SDFILE]end_addr:ff000
+49 53 44 55 04 02 51 FF 88 27 51 30 2F 06 FF FF 
+[00:00:00.103][VM]vm_info:addr:0xff000, len:0x8000, mode:0x0
+[00:00:00.105]power config
+[00:00:00.109]type = 10000,ch = 0
+[00:00:00.110]type = 10000,ch = 6
+[00:00:00.110]type = 10000,ch = 4
+[00:00:00.111]LDOREF = 231
+[00:00:00.112]vbat = 4748 mv
+[00:00:00.113]dtemp = 1426 mv
+[00:00:00.113]wvdd_trim: 0, wvdd_lev: 7, v: 0, err: 0
+[00:00:00.114]pvdd_trim: 0, pvdd_lev: 12 v: 0, pvdd_lev_l: 7, err: 0
+[00:00:00.114]>> Func:board_init, Line:66, call: fm_dev_init Func!
 
-[00:00:00.144]>>>> Read FM Outside Success!
+[00:00:00.135]gpio_cfg_at_power_on
+[00:00:00.135]led hw config, len: 0xc
+05 54 9A E8 C2 01 05 01 3F E8 C2 00 
+[00:00:00.135]led state config, len: 0x2a9
+[00:00:00.136]audio_init
+[00:00:00.136]audio_input_initcall
+[00:00:00.136] audio_linein_file_init len 38, izeof(cfg) 38
+[00:00:00.137] adc_f.cfg.linein_en_map = 3
+[00:00:00.137] adc_f.cfg.linein_det_en = 1
+[00:00:00.137] adc_f.cfg.param[0].linein_mode      = 0
+[00:00:00.138] adc_f.cfg.param[0].linein_gain      = 3
+[00:00:00.138] adc_f.cfg.param[0].linein_pre_gain  = 0
+[00:00:00.138] adc_f.cfg.param[0].linein_ain_sel   = 1
+[00:00:00.139] adc_f.cfg.param[0].linein_dcc       = 14
+[00:00:00.139] adc_f.cfg.param[1].linein_mode      = 0
+[00:00:00.139] adc_f.cfg.param[1].linein_gain      = 3
+[00:00:00.140] adc_f.cfg.param[1].linein_pre_gain  = 0
+[00:00:00.140] adc_f.cfg.param[1].linein_ain_sel   = 1
+[00:00:00.140] adc_f.cfg.param[1].linein_dcc       = 14
+[00:00:00.141] adc_f.cfg.param[2].linein_mode      = 0
+[00:00:00.141] adc_f.cfg.param[2].linein_gain      = 3
+[00:00:00.141] adc_f.cfg.param[2].linein_pre_gain  = 0
+[00:00:00.142] adc_f.cfg.param[2].linein_ain_sel   = 1
+[00:00:00.142] adc_f.cfg.param[2].linein_dcc       = 14
+[00:00:00.142] adc_f.cfg.param[3].linein_mode      = 0
+[00:00:00.143] adc_f.cfg.param[3].linein_gain      = 3
+[00:00:00.143] adc_f.cfg.param[3].linein_pre_gain  = 0
+[00:00:00.143] adc_f.cfg.param[3].linein_ain_sel   = 1
+[00:00:00.144] adc_f.cfg.param[3].linein_dcc       = 14
+[00:00:00.144] audio_adc_file_init len 40, sizeof(cfg) 40
+[00:00:00.145]>>>> Read FM Outside Success!
 [00:00:00.145]>>>> Outside :
 [00:00:00.145]linein_en_map : 0
 [00:00:00.145]clk_io_uuid : 0, gpio:255
-[00:00:00.145]hdmi port22;dport[ff] 
+[00:00:00.146]hdmi port22;dport[ff] 
 [00:00:00.146]cec io [23]
 [00:00:00.146]iis scl porta [24]
 [00:00:00.146]iis sda porta [27]
 [00:00:00.146]iic num 0;hdmi det mode[1] 
-[00:00:00.146]hdmi det port [26]
+[00:00:00.147]hdmi det port [26]
 [00:00:00.147]opt port20;dport[ff] 
 [00:00:00.147]caol port6;dport[ff] 
 [00:00:00.147]analog port index[3]
-[00:00:00.147]audio_dac_initcall
-[00:00:00.147][AUDIO-DAC]audio_dac_init
+[00:00:00.148]audio_dac_initcall
+[00:00:00.148][AUDIO-DAC]audio_dac_init
 [00:00:00.148]>> audio_common_clock_open mode:0 cur_status:0
 [00:00:00.148]>>>> buf time:50ms, buf_len : 9600
-[00:00:00.148]>> audio_common_power_open cur_status:0
+[00:00:00.149]>> audio_common_power_open cur_status:0
 [00:00:00.179]>>>>>>>>>>>>>>>>>> channel: 2
-s
-[00:00:00.189]>>pending!!!
-[00:00:00.239]>>>>>>>trim: -978
-[00:00:00.288]>>>>>>>trim: -1079
-[00:00:00.288]>> audio_dac_analog_status_add_check add:1 cur_status:0
-[00:00:00.288]audio_dac_trim_value_check -978 -1079 0 0
+v
+[00:00:00.190]>>pending!!!
+[00:00:00.239]>>>>>>>trim: -1089
+[00:00:00.288]>>>>>>>trim: -932
+[00:00:00.289]>> audio_dac_analog_status_add_check add:1 cur_status:0
+[00:00:00.289]audio_dac_trim_value_check -932 -1089 0 0
 
 [00:00:00.289]<error> [AUDIO-DAC]dac trim err
 
-[00:00:00.289]audio_init succ
-[00:00:00.289][USER_CFG]bt name config:soundbar
-[00:00:00.289][USER_CFG]read pair code err
+[00:00:00.290]audio_init succ
+[00:00:00.290][USER_CFG]bt name config:soundbar
+[00:00:00.290][USER_CFG]read pair code err
 [00:00:00.290][USER_CFG]tws pair code config:
 88 88 
-[00:00:00.290][USER_CFG]rf config:5
-[00:00:00.290][USER_CFG]aec config:
+[00:00:00.291][USER_CFG]rf config:5
+[00:00:00.291][USER_CFG]aec config:
 [00:00:00.291][USER_CFG]sms_ans config:
 [00:00:00.291][USER_CFG]aec cfg read err,use default value
-[00:00:00.291][USER_CFG]aec_cfg mic_gain:6 mic1_gain:6 dac_gain:0
-[00:00:00.292]vol_init call 10, music 50, tone 10
-[00:00:00.292][USER_CFG]warning_tone_v:3700 poweroff_tone_v:3600
-[00:00:00.293][USER_FG]auto_off_time:0
-[00:00:00.293][USER_CFG]read music play mode err
-[00:00:00.293][USER_CFG]
+[00:00:00.292][USER_CFG]aec_cfg mic_gain:6 mic1_gain:6 dac_gain:0
+[00:00:00.293]vol_init call 10, music 50, tone 10
+[00:00:00.293][USER_CFG]warning_tone_v:3700 poweroff_tone_v:3600
+[00:00:00.294][USER_CFG]auto_off_time:0
+[00:00:00.294][USER_CFG]read music play mode err
+[00:00:00.294][USER_CFG]
  app_var.cycle_mode:[0] set to [1]
 [00:00:00.294][USER_CFG]
  default scene 0 
-[00:00:00.294][USER_CFG]
+[00:00:00.295][USER_CFG]
  default eq0 cfg 0 
-[00:00:00.294][USER_CFG]mac:
+[00:00:00.295][USER_CFG]mac:
 EC AE 49 66 07 A6 
 [00:00:00.295]adkey info len: 60
-[00:00:00.295]key_numbers: 10
-[00:00:00.295]adkey_pin: 17
-[00:00:00.295]extern_up_en: 1
+[00:00:00.296]key_numbers: 10
+[00:00:00.296]adkey_pin: 17
+[00:00:00.296]extern_up_en: 1
 [00:00:00.296]pull_up_value: 220
 [00:00:00.296]ad_channel: 1048581
-[00:00:00.296]long_press_enable:0 time:8s
-[00:00:00.296]ADkey:0,judge_advalue:61,key_value:10
+[00:00:00.297]long_press_enable:0 time:8s
+[00:00:00.297]ADkey:0,judge_advalue:61,key_value:10
 [00:00:00.297]ADkey:1,judge_advalue:173,key_value:11
-[00:00:00.297]ADkey:2,judge_advalue:261,key_value:12
-[00:00:00.297]ADkey:3,judge_advalue:356,key_value:13
-[00:00:00.297]ADkey:4,judge_advalue:473,key_value:14
+[00:00:00.298]ADkey:2,judge_advalue:261,key_value:12
+[00:00:00.298]ADkey:3,judge_advalue:356,key_value:13
+[00:00:00.298]ADkey:4,judge_advalue:473,key_value:14
 [00:00:00.298]ADkey:5,judge_advalue:573,key_value:15
-[00:00:00.298]ADkey:6,judge_advalue:663,key_value:16
-[00:00:00.298]ADkey:7,judge_advalue:776,key_value:17
-[00:00:00.299]ADkey:8,jude_advalue:884,key_value:18
-[00:00:00.299]ADkey:9,judge_advalue:976,key_value:19
-[00:00:00.299]type = 100000,ch = 5
+[00:00:00.299]ADkey:6,judge_advalue:663,key_value:16
+[00:00:00.299]ADkey:7,judge_advalue:776,key_value:17
+[00:00:00.299]ADkey:8,judge_advalue:884,key_value:18
+[00:00:00.300]ADkey:9,judge_advalue:976,key_value:19
+[00:00:00.300]type = 100000,ch = 5
 [00:00:00.300][UPDATE]update module init ok
-[00:00:00.300][TEST-UPDATE]testbox msg handle reg:6006a0c
-[00:00:00.300]audio_online_debug_open
-[00:00:00.301][CLOCK]---HSB CLK : 320000000
-[00:00:00.301][CLOCK]---LSB CLK : 80000000
-[00:00:00.301][CLOCK]---XIP CLK : 80000000
-[00:00:00.301][CLOCK]---DVDD  : 0 | 12 = 12
+[00:00:00.301][TEST-UPDATE]testbox msg handle reg:6006a0c
+[00:00:00.301]audio_online_debug_open
+[00:00:00.302][CLOCK]---HSB CLK : 320000000
+[00:00:00.302][CLOCK]---LSB CLK : 80000000
+[00:00:00.302][CLOCK]---XIP CLK : 80000000
+[00:00:00.302][CLOCK]---DVDD  : 0 | 12 = 12
 [00:00:00.302][CLOCK]---RVDD  : 12 = 12
 [00:00:00.302][CLOCK]---DCVDD : 8 = 8
-[00:00:00.302][CLOCK]---RANGE : 2 
-[00:00:00.302]usb_stack_init()
-[00:00:00.302][USB]OTG_info0: 1 3 fa
+[00:00:00.303][CLOCK]---RANGE : 2 
+[00:00:00.303]usb_stack_init()
+[00:00:00.303][USB]OTG_info0: 1 3 fa
 [00:00:00.303][SD]sd0 init !
 [00:00:00.303][USB]OTG_cnt0: 3 2 2 3
-[00:00:00.303]sd io init !
-[00:00:00.303]hdmi port22;dport[ff] 
-[00:00:00.303]cec io [23]
-[00:00:00.303]iis scl porta [24]
-[00:00:00.303]iis sda porta [27
+[00:00:00.304]sd io init !
+[00:00:00.304]hdmi port22;dport[ff] 
+[00:00:00.304]cec io [23]
+[00:00:00.304]iis scl porta [24]
+[00:00:00.304]iis sda porta [27]
 [00:00:00.304]iic num 0;hdmi det mode[1] 
-[00:00:00.304]hdmi det port [26]
-[00:00:00.304]opt port20;dport[ff] 
-[00:00:00.304]caol port6;dport[ff] 
-[00:00:00.304]analog port index[3]
-[00:00:00.304] HDMI_DET_BY_IO 
+[00:00:00.305]hdmi det port [26]
+[00:00:00.305]opt port20;dport[ff] 
+[00:00:00.305]caol port6;dport[ff] 
+[00:00:00.305]analog port index[3]
+[00:00:00.305] HDMI_DET_BY_IO 
 [00:00:00.305]sdfile add start
 [00:00:00.305]dev_manager_add can not find logo sdfile
-[00:00:00.305]==========================   
+[00:00:00.306]==========================   
 
-[00:00:00.305][LED7] led7_init
-[00:00:00.305]led7_timer_init
-[00:00:00.305]err priority 7 : priority 6 is reserved fot GIEMASK
+[00:00:00.306][LED7] led7_init
+[00:00:00.306]led7_timer_init
+[00:00:00.306]err priority 7 : priority 6 is reserved fot GIEMASK
 [00:00:00.306]led7 timer id:1
-[00:00:00.306][APP-UPDATE]<--------update_result_deal=0x5a00 9181--------->
-[00:00:00.306]=================update_param_len:1000
-[00:00:00.306]vbat: 4780
-[00:00:00.306]vbat: 4780
-[00:00:00.307]vbat: 4780
-[00:00:00.307]vbat: 4780
-[00:00:00.307]vbat: 4780
-[00:00:00.307]vbat: 4780
-[00:00:00.307]vbat: 4780
-[00:00:00.307]vbat: 4780
-[00:00:00.307]vbat: 4780
-[00:00:00.307]vbat: 4780
-[00:00:00.307]vbat: 4780
+[00:00:00.307][APP-UPDATE]<--------update_result_deal=0x5a00 9181--------->
+[00:00:00.307]=================update_param_len:1000
+[00:00:00.307]vbat: 4748
+[00:00:00.307]vbat: 4748
+[00:00:00.307]vbat: 4748
+[00:00:00.307]vbat: 4748
+[00:00:00.308]vbat: 4748
+[00:00:00.308]vbat: 4748
+[00:00:00.308]vbat: 4748
+[00:00:00.308]vbat: 4748
+[00:00:00.308]vbat: 4748
+[00:00:00.308]vbat: 4748
+[00:00:00.308]vbat: 4748
 [00:00:00.308][BATTERY]percent: 0, voltage: 3300 mV
-[00:00:00.308][BATTERY]percent: 5, voltage: 3450 mV
-[00:00:00.308][BATTERY]percent: 10, voltage: 3680 mV
-[00:00:00.308][BATTERY]percent: 20, voltage: 3740 mV
-[00:00:00.308][BATTERY]percent: 30, voltage: 3770 mV
+[00:00:00.309][BATTERY]percent: 5, voltage: 3450 mV
+[00:00:00.309][BATTERY]percent: 10, voltage: 3680 mV
+[00:00:00.309][BATTERY]percent: 20, voltage: 3740 mV
+[00:00:00.309][BATTERY]percent: 30, voltage: 3770 mV
 [00:00:00.309][BATTERY]percent: 40, voltage: 3790 mV
-[00:00:00.309][BATTERY]percent: 50, voltage: 3820 mV
-[00:00:00.309][BATTERY]percent: 60, voltage: 3870 mV
-[00:00:00.309][BATTERY]percent: 70, voltage: 3920 mV
-[00:00:00.309][BATTERY]percent: 80, voltage: 3980 mV
+[00:00:00.310][BATTERY]percent: 50, voltage: 3820 mV
+[00:00:00.310][BATTERY]percent: 60, voltage: 3870 mV
+[00:00:00.310][BATTERY]percent: 70, voltage: 3920 mV
+[00:00:00.310][BATTERY]percent: 80, voltage: 3980 mV
 [00:00:00.310][BATTERY]percent: 90, voltage: 4060 mV
-[00:00:00.310][BATTERY]percent: 100, voltage: 4120 mV
-[00:00:00.310][CLOCK]sys_pll_trim() info dump:
-[00:00:00.310][CLOCK]get sys_pll trim from flash 4
+[00:00:00.311][BATTERY]percent: 100, voltage: 4120 mV
+[00:00:00.311][CLOCK]sys_pll_trim() info dump:
+[00:00:00.311][CLOCK]get sys_pll trim from flash 4
 [00:00:00.311][CLOCK]usb_pll_trim() info dump:
-[00:00:00.311][CLOCK]get usb_pll trim from flash 3
-[00:00:00.311][CLOCK]usb_rxldo_trim() info dump:
-[00:00:00.311][CLOCK]get RX_HS_LDO trim from flash 7
-[00:00:00.311][CLOCK]get TX_HS_LDO trim from efuse 15
+[00:00:00.312][CLOCK]get usb_pll trim from flash 3
+[00:00:00.312][CLOCK]usb_rxldo_trim() info dump:
+[00:00:00.312][CLOCK]get RX_HS_LDO trim from flash 7
+[00:00:00.312][CLOCK]get TX_HS_LDO trim from efuse 15
 [00:00:00.312][APP_IDLE]power on
-[00:00:00.312]tone_player: tone_zh/power_on.*
-[00:00:00.312]pipeline_uuid: 7674
+[00:00:00.313]tone_player: tone_zh/power_on.*
+[00:00:00.313]pipeline_uuid: 7674
 
-[00:00:00.312][STREAM]create_stream: 419644, 0
-[00:00:00.313]demuxer_not_match: power_on.mp3
+[00:00:00.313][STREAM]create_stream: 419644, 0
+[00:00:00.314]demuxer_not_match: power_on.mp3
 [00:00:00.314]source_fmt: 14, 16000
-[00:00:00.314]ui led7_MODE:2
-[00:00:00.314]pwm led normal status:1
-[00:00:00.314][STREAM]bit_wide: channel_expander, 0, 1
-[00:00:00.314]led_ui_do_display: uuid: 0xa6a4
+[00:00:00.315]ui led7_MODE:2
+[00:00:00.315]pwm led normal status:1
+[00:00:00.315][STREAM]bit_wide: channel_expander, 0, 1
+[00:00:00.315]led_ui_do_display: uuid: 0xa6a4
 [00:00:00.315][STREAM]bit_wide: mixer, 0, 1
-[00:00:00.315]led_ui_period_action_display_try: ret = -2
-[00:00:00.315][STREAM]bit_wide: bt_audio_sync, 0, 1
-[00:00:00.315]current_state_loop = 0
-[00:00:00.315][STREAM]bit_wide: volume, 0, 1
+[00:00:00.316]led_ui_period_action_display_try: ret = -2
+[00:00:00.316][STREAM]bit_wide: bt_audio_sync, 0, 1
+[00:00:00.316]current_state_loop = 0
+[00:00:00.316][STREAM]bit_wide: volume, 0, 1
 [00:00:00.316][STREAM]negotiation: deal
-[00:00:00.316][STREAM]source: sample_rate 16000, channel 14, bit_wide 0, Qval 15
-[00:00:00.316][STREAM]thread: tone_dec, decoder
-[00:00:00.316][STREAM]decoder: sample_rate 16000, channel 14, bit_wide 1, Qval 15
-[00:00:00.317]volume_ioc_start bit_wide, 1 1 15
-[00:00:00.317]volume_ioc_start len 16, sizeof(cfg) 16
-[00:00:00.317]vol read config ok :16,-45,0,1,0
+[00:00:00.317][STREAM]source: sample_rate 16000, channel 14, bit_wide 0, Qval 15
+[00:00:00.317][STREAM]thread: tone_dec, decoder
+[00:00:00.317][STREAM]decoder: sample_rate 16000, channel 14, bit_wide 1, Qval 15
+[00:00:00.318]volume_ioc_start bit_wide, 1 1 15
+[00:00:00.318]volume_ioc_start len 16, sizeof(cfg) 16
+[00:00:00.318]vol read config ok :16,-45,0,1,0
 [00:00:00.318]vol param:2063,(300/100)dB,cur:10,max:16,(-1800/100)dB
-[00:00:00.318]audio_state:idle->tone,max_vol:16
-[00:00:00.318]set_vol[tone]:tone=10
-[00:00:00.318]audio_syncts_node_start bit_wide, 1 1 15
-[00:00:00.319][STREAM]thread: syncts, bt_audio_sync
-[00:00:00.319]audio syncts node start : 1,  1, 16000, 44100
+[00:00:00.319]audio_state:idle->tone,max_vol:16
+[00:00:00.319]set_vol[tone]:tone=10
+[00:00:00.319]audio_syncts_node_start bit_wide, 1 1 15
+[00:00:00.320][STREAM]thread: syncts, bt_audio_sync
+[00:00:00.320]audio syncts node start : 1,  1, 16000, 16000
 [00:00:00.320][STREAM]thread: stream_out, dac
-[00:00:00.320][STREAM]dac: sample_rate 44100, channel 25, bit_wide 1, Qval 15
-[00:00:00.320][STREAM]send_callback_err: app_core, 8, 0
-[00:00:00.320]tone_callback: 8, 0
-[00:00:00.321][AUDIO-DAC]fifo init : 0x16b180 0x4b0 0x0 0x0 0x4af
+[00:00:00.321][STREAM]dac: sample_rate 1600, channel 25, bit_wide 1, Qval 15
+[00:00:00.321][STREAM]send_callback_err: app_core, 8, 0
+[00:00:00.321]tone_callback: 8, 0
+[00:00:00.322][AUDIO-DAC]fifo init : 0x16b180 0x4b0 0x0 0x0 0x4af
 [00:00:00.322]>>>>>>>>>>>>>>>>>> channel: 2
-[00:00:00.332]>>dac_trim: -978 -1079 0 0
-[00:00:00.332]>>TM0: fbc9fc2e TM1: 0
+[00:00:00.333]>>dac_trim: -932 -1089 0 0
+[00:00:00.333]>>TM0: fbbffc5c TM1: 0
  
-[00:00:00.332][AUDIO-DAC]delay set : 1200, 108, 880
+[00:00:00.333][AUDIO-DAC]delay set : 800, 40, 320
 U
-[00:00:00.333][AUDIO-DAC]audio_dac_fifo_start : 0x0, 10, DAC_CON = 0x80130195
-[00:00:00.333][fade]state:tone,max_volume:16,cur:10,10
-[00:00:00.333]set_vol[tone]:=10
-[00:00:00.370]cur_voltage: 4780 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
+[00:00:00.334][AUDIO-DAC]audio_dac_fifo_start : 0x0, 10, DAC_CON = 0x8013019a
+[00:00:00.334][fade]state:tone,max_volume:16,cur:10,10
+[00:00:00.334]set_vol[tone]:=10
+[00:00:00.371]cur_voltage: 4748 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
 
 [00:00:00.847][STREAM]dec_err: 48
-[00:00:00.863][STREAM]dec_end: 0
-[00:00:00.863][AUDIO-DAC]DAV VOL0 : 0x20002000
-[00:00:00.864][fade]state:idle,max_volume:100,cur:0,0
-[00:00:00.864]set_vol[idle]:=0
-[00:00:00.916][AUDIO-DAC]dac off
-[00:00:00.916][STREAM]send_callback_err: app_core, 10, 0
-[00:00:00.916]tone_callback: a, 0
-[00:00:00.916][STREAM]kill_thread: tone_dec
-[00:00:00.917][STREAM]kill_thread: syncts
-[00:00:00.917][STREAM]kill_thread: stream_out
-[00:00:00.917][STREAM]free_stream: 419644
-[00:00:00.917][STREAM]decoder_release: 4198c0
-[00:00:00.917][STREAM]release: jlstream 10
-[00:00:00.918][APP_IDLE]exit power on mode
-[00:00:00.918]bt_code_size:2702
-[00:00:00.918]Current free heap 584316 bytes, minimum ever free heap 552100 bytes, physics memory size 361984 bytes
-[00:00:00.918]bt_code_run_addr:0x168000
-[00:00:00.919]Current free heap 584276 bytes, minimum ever free heap 552100 bytes, physics memory size 359040 bytes
-[00:00:00.919]tone_player: tone_zh/bt.*
-[00:00:00.920]pipeline_uuid: 7674
+[00:00:00.860][STREAM]dec_end: 0
+[00:00:00.861][AUDIO-DAC]DAV VOL0 : 0x20002000
+[00:00:00.861][fade]state:idle,max_volume:100,cur:0,0
+[00:00:00.861]set_vol[idle]:=0
+[00:00:00.913][AUDIO-DAC]dac off
+[00:00:00.913][STREAM]send_callback_err: app_core, 10, 0
+[00:00:00.913]tone_callback: a, 0
+[00:00:00.914][STREAM]kill_thread: tone_dec
+[00:00:00.914][STREAM]kill_thread: syncts
+[00:00:00.914][STREAM]kill_thread: stream_out
+[00:00:00.914][STREAM]free_stream: 419644
+[00:00:00.915][STREAM]decoder_release: 4198c0
+[00:00:00.915][STREAM]release: jlstream 10
+[00:00:00.915][APP_IDLE]exit power on mode
+[00:00:00.915]bt_code_size:2702
+[00:00:00.915]Current free heap 584316 bytes, minimum ever free heap 560368 bytes, physics memory size 361984 bytes
+[00:00:00.916]bt_code_run_addr:0x168500
+[00:00:00.916]Current free heap 584276 bytes, minimu ever free heap 560368 bytes, physics memory size 359040 bytes
+[00:00:00.917]tone_player: tone_zh/bt.*
+[00:00:00.917]pipeline_uuid: 7674
 
-[00:00:00.920][STREAM]create_stream: 41979c, 0
-[00:00:00.920]demuer_not_match: bt.mp3
-[00:00:00.921]source_fmt: 14, 16000
-[00:00:00.921][0]:0 
-[00:00:00.921][STREAM]bit_wide: channel_expander, 0, 1
-[00:00:00.921][1]:6 
-[00:00:00.922][STREAM]bit_wide: mixer, 0, 1
-[00:00:00.922][2]:12 
-[00:00:00.922][STREAM]bit_wide: bt_audio_sync, 0, 1
-[00:00:00.922][3]:18 
-[00:00:00.922][STREAM]bit_wide: volume, 0, 1
-[00:00:00.923][4]:25 
-[00:00:00.923][STREAM]negotiation: deal
-[00:00:00.923][5]:31 
-[00:00:00.923][STREAM]source: sample_rate 16000, channel 14, bit_wide 0, Qval 15
-[00:00:00.923][6]:37 
-[00:00:00.924][STREAM]thread: tone_dec, decoder
-[00:00:00.924][7]:43 
-[00:00:00.924][STREAM]decoder: sample_rate 16000, channel 14, bit_wide 1, Qval 15
-[00:00:00.924][8]:50 
-[00:00:00.925][9]:56 
-[00:00:00.925]volume_ioc_start bit_wide, 1 1 15
-[00:00:00.925][10]:62 
-[00:00:00.925]volume_ioc_start len 16, sizeof(cfg) 16
-[00:00:00.925][11]:68 
-[00:00:00.925]vol read config ok :16,-45,0,1,0
-[00:00:00.926][12]:75 
-[00:00:00.926]vol param:2063,(300/100)dB,cur:10,max:16,(-1800/100)dB
-[00:00:00.926][13]:81 
-[00:00:00.926]audio_state:idle->tone,max_vol:16
-[00:00:00.927][14]:87 
-[00:00:00.927]set_vol[tone]:tone=10
-[00:00:00.927][15]:93 
-[00:00:00.927]audio_syncts_node_start bit_wide, 1 1 15
-[00:00:00.927][16]:100 
-[00:00:00.927][STREAM]thread: syncts, bt_audio_sync
-[00:00:00.928]le_support:1 1
-[00:00:00.928]audio syncts node start : 1,  1, 16000, 44100
-[00:00:00.928]le_config:1 1 1 1
-[00:00:00.928][LMP]>>>btctrler_task_init<<<
-[00:00:00.928][STREAM]thread: stream_out, dac
-[00:00:00.929][STREAM]dac: sample_rate 44100, channel 25, bit_wide 1, Qval 15
-[00:00:00.929][STREAM]send_callback_err: app_core, 8, 0
-[00:00:00.930][AUDIO-DAC]fifo init : 0x16b180 0x4b0 0x0 0x0 0x4af
-[00:00:00.930]>>>>>>>>>>>>>>>>>> channel: 2
-[00:00:00.940]>>dac_trim: -978 -1079 0 0
-[00:00:00.940]>>TM0: fbc9fc2e TM1: 0
+[00:00:00.917][STREAM]create_stream: 41979c, 0
+[00:00:00.918]demuxer_not_match: bt.mp3
+[00:00:00.918]source_fmt: 14, 16000
+[00:00:00.918][0]:0 
+[00:00:00.919][STREAM]bit_wide: channel_expander, 0, 1
+[00:00:00.919][1]:6 
+[00:00:00.919][STREAM]bit_wide: mixer, 0, 1
+[00:00:00.919][2]:12 
+[00:00:00.919][STREAM]bit_wide: bt_audio_sync, 0, 1
+[00:00:00.920][3]:18 
+[00:00:00.920][STREAM]bit_wide: volume, 0, 1
+[00:00:00.920][4]:25 
+[00:00:00.920][STREAM]negotiation: deal
+[00:00:00.920][5]:31 
+[00:00:00.920][STREAM]source: sample_rate 16000, channel 14, bit_wide 0, Qval 15
+[00:00:00.921][6]:37 
+[00:00:00.921][STREAM]thread: tone_dec, decoder
+[00:00:00.921][7]:43 
+[00:00:00.921][STREAM]decoder: sample_rate 16000, channel 14, bit_wide 1, Qval 15
+[00:00:00.922][8]:50 
+[00:00:00.922][9]:56 
+[00:00:00.922]volume_ioc_start bit_wide, 1 1 15
+[00:00:00.922][10]:62 
+[00:00:00.922]volume_ioc_start len 16, sizeof(cfg) 16
+[00:00:00.923][11]:68 
+[00:00:00.923]vol read config ok :16,-45,0,1,0
+[00:00:00.923][12]:75 
+[00:00:00.923]vol param:2063,(300/100)dB,cur:10,max:16,(-1800/100)dB
+[00:00:00.923][13]:81 
+[00:00:00.924]audio_state:idle->tone,max_vol:16
+[00:00:00.924][14]:87 
+[00:00:00.924]set_vol[tone]:tone=10
+[00:00:00.924][15]:93 
+[00:00:00.924]audio_syncts_node_start bit_wide, 1 1 15
+[00:00:00.925][16]:100 
+[00:00:00.925][STREAM]thread: syncts, bt_audio_sync
+[00:00:00.925]le_support:1 1
+[00:00:00.925]audio syncts node start : 1,  1, 16000, 16000
+[00:00:00.925]le_config:1 1 1 1
+[00:00:00.926][LMP]>>>btctrler_task_init<<<
+[00:00:00.926][STREAM]thread: stream_out, dac
+[00:00:00.926][STREAM]dac: sample_rate 16000, channel 25, bit_wide 1, Qval 15
+[00:00:00.926][STREAM]send_callback_err: app_core, 8, 0
+[00:00:00.927][AUDIO-DAC]fifo init : 0x16b180 0x4b0 0x0 0x0 0x4af
+[00:00:00.927]>>>>>>>>>>>>>>>>>> channel: 2
+[00:00:00.938]>>dac_trim: -932 -1089 0 0
+[00:00:00.938]>>TM0: fbbffc5c TM1: 0
  
-[00:00:00.941][AUDIO-DAC]delay set : 1200, 108, 880
-[00:00:00.941][AUDIO-DAC]audio_dac_fifo_start : 0x0, 10, DAC_CON = 0x801301b5
+[00:00:00.938][AUDIO-DAC]delay set : 800, 40, 320
 U
-[00:00:00.941][fade]state:tone,max_volume:16,cur:10,10
-[00:00:00.941]set_vol[tone]:=10
-[00:00:00.959]cap:3d ############# freq:2403
-[00:00:00.959]cap:3d ############# freq:2411
-[00:00:00.959]cap:39 ############# freq:2438
-[00:00:00.959]cap:39 ############# freq:2446
-[00:00:00.959]cap:36 ############# freq:2465
-[00:00:00.960]cap:36 ############# freq:2473
-[00:00:00.960][HCI_LMP]init
-[00:00:00.960][HCI_LMP]open
-[00:00:00.960]bredr_bd_init
-[00:00:00.961]bredr_bd_init_success
-[00:00:00.961][HCI_LMP]loca_name soundbar
-[00:00:00.961]bt_app_msg type:0x3d
-[00:00:00.61][HCI_LMP]32 9
-[00:00:00.961]unknow msg type:61
-[00:00:00.962][LMP]HCI_WRITE_SCAN_ENABLE : 0
-[00:00:00.962]tone_callback: 8, 1
-[00:00:00.962]bt_app_msg type:0x3c
-[00:00:00.962]unknow msg type:60
-[00:00:00.962]ui led7_MODE:3
-[00:00:00.962][SOUNDBOX]BT_STATUS_INIT_OK
-[00:00:00.963]dual_conn BT_STATUS_INIT_OK
-[00:00:00.963]page_state: 0, 0
-[00:00:00.963][PHONECALL] BT STATUS DEFAULT
-[00:00:00.963][LMP]HCI_WRITE_SCAN_ENABLE : 3
-[00:00:00.963]pwm led normal status:4
-[00:00:00.964]led_ui_do_display: uuid: 0x2383
-[00:00:00.964]led_ui_period_action_display_try: ret = 0
-[00:00:00.964]bt_app_msg type:0x47
-[00:00:00.964]unknow msg type:71
-[00:00:00.973]inquiry_scan: soundbar
+[00:00:00.938][AUDIO-DAC]audio_dac_fifo_start : 0x0, 10, DAC_CON = 0x801301ba
+[00:00:00.938][fade]state:tone,max_volume:16,cur:10,10
+[00:00:00.939]set_vol[tone]:=10
+[00:00:00.955]cap:3d ############# freq:2405
+[00:00:00.955]cap:3d ############# freq:2413
+[00:00:00.955]cap:39 ############# freq:2440
+[00:00:00.956]cap:39 ############# freq:2448
+[00:00:00.956]cap:36 ############# freq:2467
+[00:00:00.956]cap:36 ############# freq:2475
+[00:00:00.956][HCI_LMP]init
+[00:00:00.956][HCI_LMP]open
+[00:00:00.957]bredr_bd_init
+[00:00:00.957]bredr_bd_init_success
+[00:00:00.957][HCI_LMP]local_name soundbar
+[00:00:00.957]bt_app_msg type:0x3d
+[00:00:00.957][HCI_LMP]32 9
+[00:00:00.957]unknow msg type:61
+[00:00:00.958][LMP]HCI_WRITE_SCAN_ENABLE : 0
+[00:00:00.958]tone_callback: 8, 1
+[00:00:00.958]bt_app_msg type:0x3c
+[00:00:00.958]unknow msg type:60
+[00:00:00.958]ui led7_MODE:3
+[00:00:00.959][SOUNDBOX]BT_STATUS_INIT_OK
+[00:00:00.959]dual_conn BT_STATUS_INIT_OK
+[00:00:00.959]page_state: 0, 0
+[00:00:00.959][LMP]HCI_WRITE_SCAN_ENABLE : 3
+[00:00:00.960][PHONECALL] BT STATUS DEFAULT
+[00:00:00.960]pwm led normal status:4
+[00:00:00.960]led_ui_do_display: uuid: 0x2383
+[00:00:00.960]led_ui_period_action_display_try: ret = 0
+[00:00:00.961]bt_app_msg type:0x47
+[00:00:00.961]unknow msg type:71
+[00:00:00.969]inquiry_scan: soundbar
 
 EC AE 49 66 07 A6 
-[00:00:00.973][BDMGR]sort_0_edr
+[00:00:00.970][BDMGR]sort_0_edr
 iqs 34
 ide 1000
 I
-[00:00:00.974]page_scan_enable
+[00:00:00.970]page_scan_enable
 
 EC AE 49 66 07 A6 
-[00:00:00.974][BDMGR]sort_0_edr
+[00:00:00.970][BDMGR]sort_0_edr
 iqs 34
 pgs 34
 ide 1000
 PIP
-[00:00:01.514]LINEIN ONLINE
-[00:00:01.864][STREAM]dec_err: 48
+[00:00:01.515]LINEIN ONLINE
+[00:00:01.863][STREAM]dec_err: 48
 [00:00:01.880][STREAM]dec_end: 0
 [00:00:01.880][AUDIO-DAC]DAV VOL0 : 0x20002000
 [00:00:01.881][fade]state:idle,max_volume:100,cur:0,0
@@ -311,1804 +433,92 @@ I
 [00:00:01.933][STREAM]send_callback_err: app_core, 10, 0
 [00:00:01.933]tone_callback: a, 1
 [00:00:01.933][STREAM]kill_thread: tone_dec
-[00:00:01.933][STREAM]kill_thread: syncts
+[00:00:01.934][STREAM]kill_thread: syncts
 [00:00:01.934][STREAM]kill_thread: stream_out
 [00:00:01.934][STREAM]free_stream: 41979c
 [00:00:01.934][STREAM]decoder_release: 41990c
-[00:00:01.934][STREAM]release: jlstream 10
+[00:00:01.935][STREAM]release: jlstream 10
 PIPIPIPIPIPIPIP
-[00:00:05.289]>>Audio_Config_Trace:
-[00:00:05.289][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:00:05.289][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:00:05.290][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:00:05.290]JL_WL_AUD CON0:1
-[00:00:05.290]AUD_CON:10a
-[00:00:05.290]DAC_CON:80130195
-[00:00:05.290]ADC_CON:10b04
-[00:00:05.290]ADC_CON1:80000
-[00:00:05.290]DAC_TM0:fbc9fc2e
-[00:00:05.291]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:00:05.291]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:00:05.291]ADDA_CON 0:d8cd0000	1:0
-[00:00:05.318][APP_AUDIO]VOL_SAVE 50
+[00:00:05.290]>>Audio_Config_Trace:
+[00:00:05.290][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
+[00:00:05.290][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
+[00:00:05.291][BitWidth]DAC = 24Bit,ADC = 16Bit
+[00:00:05.291]JL_WL_AUD CON0:1
+[00:00:05.291]AUD_CON:10a
+[00:00:05.291]DAC_CON:8013019a
+[00:00:05.291]ADC_CON:10b04
+[00:00:05.291]ADC_CON1:80000
+[00:00:05.291]DAC_TM0:fbbffc5c
+[00:00:05.292]DAA_CON 0:1e400514 	1:137,	2:229a6,	3:d1576420    4:0,7:5000
+[00:00:05.292]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
+[00:00:05.292]ADDA_CON 0:b8cd0000	1:0
+[00:00:05.319][APP_AUDIO]VOL_SAVE 50
 IP
 [00:00:05.880]cpu: 2 2  clk:320000000 24000000 24000000, 1
 
 [00:00:05.891][CLOCK]---HSB CLK : 24000000
 [00:00:05.891][CLOCK]---LSB CLK : 24000000
-[00:00:05.891][CLOCK]---XIP CLK : 24000000
+[00:00:05.892][CLOCK]---XIP CLK : 24000000
 [00:00:05.882][CLOCK]---DVDD  : 0 | 4 = 4
 [00:00:05.883][CLOCK]---RVDD  : 4 = 4
-[00:00:05.883][CLOCK]---DCVDD : 8 = 8
+[00:00:05.884][CLOCK]---DCVDD : 8 = 8
 [00:00:05.884][CLOCK]---RANGE : 0 IPIPIPIPIP
 [00:00:09.881]cpu: 1 9  clk:24000000 24000000 24000000, 1
 IP
-[00:00:10.289]>>Audio_Config_Trace:
+[00:00:10.290]>>Audio_Config_Trace:
 [00:00:10.290][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
 [00:00:10.291][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
 [00:00:10.292][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:00:10.293]JL_WL_AUD CON0:1
-[00:00:10.293]AUD_CON:10a
-[00:00:10.294]DAC_CON:80130195
-[00:00:10.294]ADC_CON:10b04
-[00:00:10.294]ADC_CON1:80000
-[00:00:10.295]DAC_TM0:fbc9fc2e
-[00:00:10.295]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:00:10.296]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:00:10.297]ADDA_CON 0:d8cd0000	1:0
-[00:00:10.372]cur_voltage: 4880 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIP
-[00:00:13.882]cpu: 2 9  clk:24000000 24000000 24000000, 1
+[00:00:10.292]JL_WL_AUD CON0:1
+[00:00:10.292]AUD_CON:10a
+[00:00:10.293]DAC_CON:8013019a
+[00:00:10.293]ADC_CON:10b04
+[00:00:10.293]ADC_CON1:80000
+[00:00:10.294]DAC_TM0:fbbffc5c
+[00:00:10.294]DAA_CON 0:1e400514 	1:137,	2:229a6,	3:d1576420    4:0,7:5000
+[00:00:10.295]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
+[00:00:10.296]ADDA_CON 0:b8cd0000	1:0
+[00:00:10.372]cur_voltage: 4728 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
 IPIP
-[00:00:15.290]>>Audio_Config_Trace:
-[00:00:15.290][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:00:15.291][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:00:15.291][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:00:15.292]JL_WL_AUD CON0:1
-[00:00:15.292]AUD_CON:10a
-[00:00:15.293]DAC_CON:80130195
-[00:00:15.293]ADC_CON:10b04
-[00:00:15.293]ADC_CON1:80000
-[00:00:15.294]DAC_TM0:fbc9fc2e
-[00:00:15.294]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:00:15.295]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:00:15.296]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIP
-[00:00:17.883]cpu: 1 9  clk:24000000 24000000 24000000, 1
-IPIPIP
-[00:00:20.289]>>Audio_Config_Trace:
-[00:00:20.290][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:00:20.291][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:00:20.292][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:00:20.292]JL_WL_AUD CON0:1
-[00:00:20.293]AUD_CON:10a
-[00:00:20.293]DAC_CON:80130195
-[00:00:20.294]ADC_CON:10b04
-[00:00:20.294]ADC_CON1:80000
-[00:00:20.294]DAC_TM0:fbc9fc2e
-[00:00:20.295]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:00:20.296]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:00:20.297]ADDA_CON 0:d8cd0000	1:0
-[00:00:20.373]cur_voltage: 4884 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIP
-[00:00:21.883]cpu: 2 9  clk:24000000 24000000 24000000, 1
-IPIPIPIPIP
-[00:00:25.289]>>Audio_Config_Trace:
-[00:00:25.290][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:00:25.291][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:00:25.292][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:00:25.292]JL_WL_AUD CON0:1
-[00:00:25.293]AUD_CON:10a
-[00:00:25.293]DAC_CON:80130195
-[00:00:25.294]ADC_CON:10b04
-[00:00:25.294]ADC_CON1:80000
-[00:00:25.294]DAC_TM0:fbc9fc2e
-[00:00:25.295]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:00:25.296]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:00:25.297]ADDA_CON 0:d8cd0000	1:0
-IP
-[00:00:25.883]cpu: 2 9  clk:24000000 24000000 24000000, 1
-IPIPIPIPIP
-[00:00:29.883]cpu: 1 9  clk:24000000 24000000 24000000, 1
-IP
-[00:00:30.291]>>Audio_Config_Trace:
-[00:00:30.291][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:00:30.292][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:00:30.292][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:00:30.293]JL_WL_AUD CON0:1
-[00:00:30.294]AUD_CON:10a
-[00:00:30.294]DAC_CON:80130195
-[00:00:30.295]ADC_CON:10b04
-[00:00:30.295]ADC_CON1:80000
-[00:00:30.296]DAC_TM0:fbc9fc2e
-[00:00:30.296]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:00:30.297]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:00:30.298]ADDA_CON 0:d8cd0000	1:0
-[00:00:30.372]cur_voltage: 4888 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:00:35.291]>>Audio_Config_Trace:
-[00:00:35.291][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:00:35.292][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:00:35.293][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:00:35.293]JL_WL_AUD CON0:1
-[00:00:35.294]AUD_CON:10a
-[00:00:35.295]DAC_CON:80130195
-[00:00:35.296]ADC_CON:10b04
-[00:00:35.297]ADC_CON1:80000
-[00:00:35.297]DAC_TM0:fbc9fc2e
-[00:00:35.297]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:00:35.299]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:00:35.299]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:00:40.290]>>Audio_Config_Trace:
-[00:00:40.291][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:00:40.291][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:00:40.292][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:00:40.292]JL_WL_AUD CON0:1
-[00:00:40.293]AUD_CON:10a
-[00:00:40.293]DAC_CON:80130195
-[00:00:40.293]ADC_CON:10b04
-[00:00:40.294]ADC_CON1:80000
-[00:00:40.294]DAC_TM0:fbc9fc2e
-[00:00:40.295]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:00:40.295]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:00:40.296]ADDA_CON 0:d8cd0000	1:0
-[00:00:40.374]cur_voltage: 4888 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:00:45.291]>>Audio_Config_Trace:
-[00:00:45.292][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:00:45.293][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:00:45.294][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:00:45.294]JL_WL_AUD CON0:1
-[00:00:45.295]AUD_CON:10a
-[00:00:45.295]DAC_CON:80130195
-[00:00:45.296]ADC_CON:10b04
-[00:00:45.296]ADC_CON1:80000
-[00:00:45.297]DAC_TM0:fbc9fc2e
-[00:00:45.297]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:00:45.298]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:00:45.299]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:00:50.292]>>Audio_Config_Trace:
-[00:00:50.292][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:00:50.294][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:00:50.294][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:00:50.295]JL_WL_AUD CON0:1
-[00:00:50.295]AUD_CON:10a
-[00:00:50.296]DAC_CON:80130195
-[00:00:50.296]ADC_CON:10b04
-[00:00:50.296]ADC_CON1:80000
-[00:00:50.297]DAC_TM0:fbc9fc2e
-[00:00:50.298]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:00:50.299]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:00:50.300]ADDA_CON 0:d8cd0000	1:0
-[00:00:50.373]cur_voltage: 4896 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:00:55.293]>>Audio_Config_Trace:
-[00:00:55.294][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:00:55.295][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:00:55.296][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:00:55.296]JL_WL_AUD CON0:1
-[00:00:55.296]AUD_CON:10a
-[00:00:55.297]DAC_CON:80130195
-[00:00:55.297]ADC_CON:10b04
-[00:00:55.298]ADC_CON1:80000
-[00:00:55.298]DAC_TM0:fbc9fc2e
-[00:00:55.299]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:00:55.301]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:00:55.302]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:01:00.294]>>Audio_Config_Trace:
-[00:01:00.294][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:01:00.296][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:01:00.296][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:01:00.297]JL_WL_AUD CON0:1
-[00:01:00.297]AUD_CON:10a
-[00:01:00.298]DAC_CON:80130195
-[00:01:00.298]ADC_CON:10b04
-[00:01:00.299]ADC_CON1:80000
-[00:01:00.299]DAC_TM0:fbc9fc2e
-[00:01:00.301]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:01:00.302]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:01:00.303]ADDA_CON 0:d8cd0000	1:0
-[00:01:00.373]cur_voltage: 4884 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:01:05.295]>>Audio_Config_Trace:
-[00:01:05.296][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:01:05.296][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:01:05.298][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:01:05.298]JL_WL_AUD CON0:1
-[00:01:05.298]AUD_CON:10a
-[00:01:05.299]DAC_CON:80130195
-[00:01:05.300]ADC_CON:10b04
-[00:01:05.300]ADC_CON1:80000
-[00:01:05.301]DAC_TM0:fbc9fc2e
-[00:01:05.301]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:01:05.302]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:01:05.303]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:01:10.295]>>Audio_Config_Trace:
-[00:01:10.296][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:01:10.296][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:01:10.297][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:01:10.298]JL_WL_AUD CON0:1
-[00:01:10.298]AUD_CON:10a
-[00:01:10.299]DAC_CON:80130195
-[00:01:10.299]ADC_CON:10b04
-[00:01:10.301]ADC_CON1:80000
-[00:01:10.301]DAC_TM0:fbc9fc2e
-[00:01:10.302]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:01:10.303]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:01:10.304]ADDA_CON 0:d8cd0000	1:0
-[00:01:10.376]cur_voltage: 4892 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:01:15.297]>>Audio_Config_Trace:
-[00:01:15.297][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:01:15.298][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:01:15.299][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:01:15.299]JL_WL_AUD CON0:1
-[00:01:15.300]AUD_CON:10a
-[00:01:15.301]DAC_CON:80130195
-[00:01:15.302]ADC_CON:10b04
-[00:01:15.302]ADC_CON1:80000
-[00:01:15.303]DAC_TM0:fbc9fc2e
-[00:01:15303]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:01:15.304]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:01:15.305]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:01:20.297]>>Audio_Config_Trace:
-[00:01:20.297][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:01:20.298][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:01:20.298][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:01:20.299]JL_WL_AUD CON0:1
-[00:01:20.299]AUD_CON:10a
-[00:01:20.300]DAC_CON:80130195
-[00:01:20.300]ADC_CON:10b04
-[00:01:20.301]ADC_CON1:80000
-[00:01:20.301]DAC_TM0:fbc9fc2e
-[00:01:20.301]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:01:20.302]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:01:20.303]ADDA_CON 0:d8cd0000	1:0
-[00:01:20.375]cur_voltage: 4876 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:01:25.297]>>Audio_Config_Trace:
-[00:01:25.297][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:01:25.298][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:01:25.299][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:01:25.300]JL_WL_AUD CON0:1
-[00:01:25.301]AUD_CON:10a
-[00:01:25.302]DAC_CON:80130195
-[00:01:25.302]ADC_CON:10b04
-[00:01:25.302]ADC_CON1:80000
-[00:01:5.303]DAC_TM0:fbc9fc2e
-[00:01:25.303]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:01:25.304]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:01:25.306]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:01:30.296]>>Audio_Config_Trace:
-[00:01:30.297][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:01:30.298][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:01:30.299][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:01:30.299]JL_WL_AUD CON0:1
-[00:01:30.300]AUD_CON:10a
-[00:01:30.301]DAC_CON:80130195
-[00:01:30.301]ADC_CON:10b04
-[00:01:30.302]ADC_CON1:80000
-[00:01:30.302]DAC_TM0:fbc9fc2e
-[00:01:30.303]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:01:30.304]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:01:30.305]ADDA_CON 0:d8cd0000	1:0
-[00:01:30.376]cur_voltage: 4888 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:01:35.297]>>Audio_Config_Trace:
-[00:01:35.297][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:01:35.298][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:01:35.299][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:01:35.299]JL_WL_AUD CON0:1
-[00:01:35.301]AUD_CON:10a
-[00:01:35.302]DAC_CON:80130195
-[00:01:35.302]ADC_CON:10b04
-[00:01:35.303]ADC_CON1:80000
-[00:01:35.303]DAC_TM0:fbc9fc2e
-[00:01:35.303]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:01:35.305]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:01:35.306]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:01:40.297]>>Audio_Config_Trace:
-[00:01:40.297][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:01:40.298][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:01:40.299][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:01:40.301]JL_WL_AUD CON0:1
-[00:01:40.301]AUD_CON:10a
-[00:01:40.301]DAC_CON:80130195
-[00:01:40.302]ADC_CON:10b04
-[00:01:40.302]ADC_CON1:80000
-[00:01:40.303]DAC_TM0:fbc9fc2e
-[00:01:40.304]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:01:40.305]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:01:40.306]ADDA_CON 0:d8cd0000	1:0
-[00:01:40.379]cur_voltage: 4884 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:01:45.298]>>Audio_Config_Trace:
-[00:01:45.299][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:01:45.301][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:01:45.301][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:01:45.302]JL_WL_AUD CON0:1
-[00:01:45.303]AUD_CON:10a
-[00:01:45.303]DAC_CON:80130195
-[00:01:45.304]ADC_CON:10b04
-[00:01:45.304]ADC_CON1:80000
-[00:01:45.305]DAC_TM0:fbc9fc2e
-[00:01:45.305]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:01:45.306]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:01:45.307]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:01:50.297]>>Audio_Config_Trace:
-[00:01:50.298][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:01:50.298][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:01:50.299][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:01:50.300]JL_WL_AUD CON0:1
-[00:01:50.300]AUD_CON:10a
-[00:01:50.300]DAC_CON:80130195
-[00:01:50.301]ADC_CON:10b04
-[00:01:50.301]ADC_CON1:80000
-[00:01:50.301]DAC_TM0:fbc9fc2e
-[00:01:50.302]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:01:50.302]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:01:50.303]ADDA_CON 0:d8cd0000	1:0
-[00:01:50.379]cur_voltage: 4888 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:01:55.298]>>Audio_Config_Trace:
-[00:01:55.298][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:01:55.300][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:01:55.301][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:01:55.302]JL_WL_AUD CON0:1
-[00:01:55.302]AUD_CON:10a
-[00:01:55.302]DAC_CON:80130195
-[00:01:55.303]ADC_CON:10b04
-[00:01:55.303]ADC_CON1:80000
-[00:01:55.305]DAC_TM0:fbc9fc2e
-[00:01:55.305]DAA_CON 0:1e400514 	1:137	2:9a6,	3:d0577420    4:0,7:5000
-[00:01:55.306]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:01:55.307]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:02:00.299]>>Audio_Config_Trace:
-[00:02:00.301][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:02:00.301][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:02:00.302][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:02:00.303]JL_WL_AUD CON0:1
-[00:02:00.303]AUD_CON:10a
-[00:02:00.304]DAC_CON:80130195
-[00:02:00.304]ADC_CON:10b04
-[00:02:00.305]ADC_CON1:80000
-[00:02:00.305]DAC_TM0:fbc9fc2e
-[00:02:00.306]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:02:00.307]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:02:00.308]ADDA_CON 0:d8cd0000	1:0
-[00:02:00.380]cur_voltage: 4892 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:02:05.299]>>Audio_Config_Trace:
-[00:02:05.301][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:02:05.301][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:02:05.302][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:02:05.302]JL_WL_AUD CON0:1
-[00:02:05.303]AUD_CON:10a
-[00:02:05.304]DAC_CON:80130195
-[00:02:05.304]ADC_CON:10b04
-[00:02:05.304]ADC_CON1:80000
-[00:02:05.305]DAC_TM0:fbc9fc2e
-[00:02:05.305]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:02:05.306]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:02:05.307]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:02:10.300]>>Audio_Config_Trace:
-[00:02:10.300][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:02:10.301][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:02:10.302][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:02:10.302]JL_WL_AUD CON0:1
-[00:02:10.303]AUD_CON:10a
-[00:02:10.303]DAC_CON:80130195
-[00:02:10.304]ADC_CON:10b04
-[00:02:10.304]ADC_CON1:80000
-[00:02:10.304]DAC_TM0:fbc9fc2e
-[00:02:10.305]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:02:10.305]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:02:10.306]ADDA_CON 0:d8cd0000	1:0
-[00:02:10.382]cur_voltage: 4888 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:02:15.301]>>Audio_Config_Trace:
-[00:02:15.301][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:02:15.302][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:02:15.303][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:02:15.304]JL_WL_AUD CON0:1
-[00:02:15.304]AUD_CON:10a
-[00:02:15.305]DAC_CON:80130195
-[00:02:15.305]ADC_CON:10b04
-[00:02:15.305]ADC_CON1:80000
-[00:02:15.306]DAC_TM0:fbc9fc2e
-[00:02:15.307]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:02:15.308]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:02:15.309]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:02:20.301]>>Audio_Config_Trace:
-[00:02:20.301][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:02:20.303][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:02:20.304][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:02:20.304]JL_WL_AUD CON0:1
-[00:02:20.305]AUD_CON:10a
-[00:02:20.305]DAC_CON:80130195
-[00:02:20.305]ADC_CON:10b04
-[00:02:20.306]ADC_CON1:80000
-[00:02:20.306]DAC_TM0:fbc9fc2e
-[00:02:20.306]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:02:20.307]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:02:20.308]ADDA_CON 0:d8cd0000	1:0
-[00:02:20.382]cur_voltage: 4888 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:02:25.302]>>Audio_Config_Trace:
-[00:02:25.303][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:02:25.303][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:02:25.304][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:02:25.305]JL_WL_AUD CON0:1
-[00:02:25.305]AUD_CON:10a
-[00:02:25.305]DAC_CON:80130195
-[00:02:25.306]ADC_CON:10b04
-[00:02:25.307]ADC_CON1:80000
-[00:02:25.307]DAC_TM0:fbc9fc2e
-[00:02:25.307]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:02:25.309]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:02:25.310]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:02:30.302]>>Audio_Config_Trace:
-[00:02:30.302][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:02:30.303][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:02:30.304][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:02:30.304]JL_WL_AUD CON0:1
-[00:02:30.305]AUD_CON:10a
-[00:02:30.305]DAC_CON:80130195
-[00:02:30.306]ADC_CON:10b04
-[00:02:30.306]ADC_CON1:80000
-[00:02:30.307]DAC_TM0:fbc9fc2e
-[00:02:30.308]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:02:30.308]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:02:30.310]ADDA_CON 0:d8cd0000	1:0
-[00:02:30.383]cur_voltage: 4900 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:02:35.301]>>Audio_Config_Trace:
-[00:02:35.302][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:02:35.302][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:02:35.303][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:02:35.304]JL_WL_AUD CON0:1
-[00:02:35.304]AUD_CON:10a
-[00:02:35.305]DAC_CON:80130195
-[00:02:35.305]ADC_CON:10b04
-[00:02:35.306]ADC_CON1:80000
-[00:02:35.306]DAC_TM0:fbc9fc2e
-[00:02:35.307]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:02:35.308]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:02:35.309]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:02:40.301]>>Audio_Config_Trace:
-[00:02:40.301][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:02:40.302][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:02:40.303][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:02:40.303]JL_WL_AUD CON0:1
-[00:02:40.303]AUD_CON:10a
-[00:02:40.304]DAC_CON:80130195
-[00:02:40.304]ADC_CON:10b04
-[00:02:40.304]ADC_CON1:80000
-[00:02:40.305]DAC_TM0:fbc9fc2e
-[00:02:40.305]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:02:40.306]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:02:40.307]ADDA_CON 0:d8cd0000	1:0
-[00:02:40.384]cur_voltage: 4908 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:02:45.302]>>Audio_Config_Trace:
-[00:02:45.302][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:02:45.303][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:02:45.304][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:02:45.305]JL_WL_AUD CON0:1
-[00:02:45.305]AUD_CON:10a
-[00:02:45.306]DAC_CON:80130195
-[00:02:45.306]ADC_CON:10b04
-[00:02:45.306]ADC_CON1:80000
-[00:02:45.307]DAC_TM0:fbc9fc2e
-[00:02:45.307]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:02:45.308]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:02:45.309]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:02:50.302]>>Audio_Config_Trace:
-[00:02:50.302][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:02:50.303][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:02:50.304][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:02:50.305]JL_WL_AUD CON0:1
-[00:02:50.305]AUD_CON:10a
-[00:02:50.306]DAC_CON:80130195
-[00:02:50.306]ADC_CON:10b04
-[00:02:50.307]ADC_CON1:80000
-[00:02:50.308]DAC_TM0:fbc9fc2e
-[00:02:50.309]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:02:50.310]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:02:50.311]ADDA_CON 0:d8cd0000	1:0
-[00:02:50.387]cur_voltage: 4892 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:02:55.302]>>Audio_Config_Trace:
-[00:02:55.303][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:02:55.304][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:02:55.305][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:02:55.305]JL_WL_AUD CON0:1
-[00:02:55.305]AUD_CON:10a
-[00:02:55.306]DAC_CON:80130195
-[00:02:55.307]ADC_CON:10b04
-[00:02:55.307]ADC_CON1:80000
-[00:02:55.307]DAC_TM0:fbc9fc2e
-[00:02:55.308]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:02:55.309]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:02:55.311]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:03:00.303]>>Audio_Config_Trace:
-[00:03:00.303][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:03:00.304][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:03:00.305][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:03:00.306]JL_WL_AUD CON0:1
-[00:03:00.307]AUD_CON:10a
-[00:03:00.307]DAC_CON:80130195
-[00:03:00.308]ADC_CON:10b04
-[00:03:00.308]ADC_CON1:80000
-[00:03:00.309]DAC_TM0:fbc9fc2e
-[00:03:00.309]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:03:00.310]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:03:00.312]ADDA_CON 0:d8cd0000	1:0
-[00:03:00.385]cur_voltage: 4896 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:03:05.303]>>Audio_Config_Trace:
-[00:03:05.304][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:03:05.304][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:03:05.305][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:03:05.306]JL_WL_AUD CON0:1
-[00:03:05.306]AUD_CON:10a
-[00:03:05.307]DAC_CON:80130195
-[00:03:05.307]ADC_CON:10b04
-[00:03:05.308]ADC_CON1:80000
-[00:03:05.308]DAC_TM0:fbc9fc2e
-[00:03:05.309]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:03:05.310]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:03:05.311]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:03:10.303]>>Audio_Config_Trace:
-[00:03:10.304][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:03:10.304][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:03:10.305][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:03:10.306]JL_WL_AUD CON0:1
-[00:03:10.306]AUD_CON:10a
-[00:03:10.307]DAC_CON:80130195
-[00:03:10.307]ADC_CON:10b04
-[00:03:10.308]ADC_CON1:80000
-[00:03:10.308]DAC_TM0:fbc9fc2e
-[00:03:10.309]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:03:10.310]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:03:10.312]ADDA_CON 0:d8cd0000	1:0
-[00:03:10.389]cur_voltage: 4892 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:03:15.304]>>Audio_Config_Trace:
-[00:03:15.304][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:03:15.305][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:03:15.306][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:03:15.307]JL_WL_AUD CON0:1
-[00:03:15.308]AUD_CON:10a
-[00:03:15.308]DAC_CON:80130195
-[00:03:15.308]ADC_CON:10b04
-[00:03:15.309]ADC_CON1:80000
-[00:03:15.310]DAC_TM0:fbc9fc2e
-[00:03:15.311]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:03:15.312]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:03:15.313]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:03:20.305]>>Audio_Config_Trace:
-[00:03:20.305][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:03:20.306][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:03:20.307][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:03:20.308]JL_WL_AUD CON0:1
-[00:03:20.309]AUD_CON:10a
-[00:03:20.309]DAC_CON:80130195
-[00:03:20.310]ADC_CON:10b04
-[00:03:20.311]ADC_CON1:80000
-[00:03:20.311]DAC_TM0:fbc9fc2e
-[00:03:20.312]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:03:20.313]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:03:20.314]ADDA_CON 0:d8cd0000	1:0
-[00:03:20.387]cur_voltage: 4896 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:03:25.305]>>Audio_Config_Trace:
-[00:03:25.306][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:03:25.307][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:03:25.307][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:03:25.308]JL_WL_AUD CON0:1
-[00:03:25.308]AUD_CON:10a
-[00:03:25.309]DAC_CON:80130195
-[00:03:25.310]ADC_CON:10b04
-[00:03:25.310]ADC_CON1:80000
-[00:03:25.311]DAC_TM0:fbc9fc2e
-[00:03:25.312]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:03:25.312]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:03:25.314]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPI
-[00:03:30.306]>>Audio_Config_Trace:
-[00:03:30.306][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:03:30.307][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:03:30.308][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:03:30.309]JL_WL_AUD CON0:1
-[00:03:30.309]AUD_CON:10a
-[00:03:30.310]DAC_CON:80130195
-[00:03:30.311]ADC_CON:10b04
-[00:03:30.311]ADC_CON1:80000P
-[00:03:30.312]DAC_TM0:fbc9fc2e
-[00:03:30.312]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:03:30.313]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:03:30.315]ADDA_CON 0:d8cd0000	1:0
-[00:03:30.387]cur_voltage: 4892 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPI
-[00:03:35.306]>>Audio_Config_Trace:
-[00:03:35.307][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:03:35.308][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:03:35.309][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:03:35.309]JL_WL_AUD CON0:1
-[00:03:35.309]AUD_CON:10a
-[00:03:35.311]DAC_CON:80130195
-[00:03:35.311]ADC_CON:10b04
-[00:03:35.311]ADC_CON1:80000
-[00:03:35.312]DAC_TM0:fbc9fc2e
-[00:03:35.313]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:03:35.313]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:03:35.315]ADDA_CON 0:d8cd0000	1:0
-PIPIPIPIPIPIP
-[00:03:40.307]>>Audio_Config_Trace:I
-[00:03:40.308][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:03:40.309][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:03:40.310][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:03:40.311]JL_WL_AUD CON01
-[00:03:40.311]AUD_CON:10a
-[00:03:40.312]DAC_CON:80130195
-[00:03:40.312]ADC_CON:10b04
-[00:03:40.313]ADC_CON1:80000
-[00:03:40.313]DAC_TM0:fbc9fc2e
-[00:03:40.314]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:03:40.315]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:03:40.316]ADDA_CON 0:d8cd0000	1:0
-P
-[00:03:40.389]cur_voltage: 4892 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIP
-[00:03:45.308]>>Audio_Config_Trace:
-[00:03:45.308][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:03:45.309][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:03:45.310][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:03:45.311]JL_WL_AUD CON0:1
-[00:03:45.311]AUD_CON:10a
-[00:03:45.312]DAC_CON:80130195
-[00:03:45.313]ADC_CON:10b04
-[00:03:45.313]ADC_CON1:80000
-[00:03:45.314]DAC_TM0:fbc9fc2e
-[00:03:45.314]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:03:45.315]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:03:45.315]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:03:50.308]>>Audio_Config_Trace:
-[00:03:50.308][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:03:50.310][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:03:50.311][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:03:50.312]JL_WL_AUD CON0:1
-[00:03:50.312]AUD_CON:10a
-[00:03:50.313]DAC_CON:80130195
-[00:03:50.313]ADC_CON:10b04
-[00:03:50.314]ADC_CON1:80000
-[00:03:50.314]DAC_TM0:fbc9fc2e
-[00:03:50.315]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:03:50.315]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:03:50.317]ADDA_CON 0:d8cd0000	1:0
-IP
-[00:03:50.389]cur_voltage: 4876 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIP
-[00:03:55.309]>>Audio_Config_Trace:
-[00:03:55.309][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:03:55.310][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:03:55.311][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:03:55.312]JL_WL_AUD CON0:1
-[00:03:55.312]AUD_CON:10a
-[00:03:55.313]DAC_CON:80130195
-[00:03:55.313]ADC_CON:10b04
-[00:03:55.314]ADC_CON1:80000
-[00:03:55.314]DAC_TM0:fbc9fc2e
-[00:03:55.315]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:03:55.316]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:03:55.317]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:04:00.309]>>Audio_Config_Trace:
-[00:04:00.310][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:04:00.311][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:04:00.311][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:04:00.312]JL_WL_AUD CON0:1
-[00:04:00.313]AUD_CON:10a
-[00:04:00.314]DAC_CON:80130195
-[00:04:00.315]ADC_CON:10b04
-[00:04:00.315]ADC_CON1:80000
-[00:04:00.315]DAC_TM0:fbc9fc2e
-[00:04:00.316]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:04:00.317]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:04:00.318]ADDA_CON 0:d8cd0000	1:0
-IP
-[00:04:00.391]cur_voltage: 4884 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIP
-[00:04:05.309]>>Audio_Config_Trace:
-[00:04:05.310][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:04:05.311][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:04:05.311][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:04:05.312]JL_WL_AUD CON0:1
-[00:04:05.312]AUD_CON:10a
-[00:04:05.313]DAC_CON:80130195
-[00:04:05.313]ADC_CON:10b04
-[00:04:05.314]ADC_CON1:80000
-[00:04:05.314]DAC_TM0:fbc9fc2e
-[00:04:05.315]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:04:05.316]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:04:05.317]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:04:10.310]>>Audio_Config_Trace:
-[00:04:10.311][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:04:10.312][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:04:10.312][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:04:10.314]JL_WL_AUD CON0:1
-[00:04:10.314]AUD_CON:10a
-[00:04:10.314]DAC_CON:80130195
-[00:04:10.315]ADC_CON:10b04
-[00:04:10.315]ADC_CON1:80000
-[00:04:10.316]DAC_TM0:fbc9fc2e
-[00:04:10.316]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:04:10.317]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:04:10.318]ADDA_CON 0:d8cd0000	1:0
-IP
-[00:04:10.390]cur_voltage: 4880 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-s
-[00:00:00.189]>>pending!!!
-[00:00:00.239]>>>>>>>trim: -978
-[00:00:00.288]>>>>>>>trim: -1079
-[00:00:00.288]>> audio_dac_analog_status_add_check add:1 cur_status:0
-[00:00:00.288]audio_dac_trim_value_check -978 -1079 0 0
 
-[00:00:00.289]<error> [AUDIO-DAC]dac trim err
-
-[00:00:00.289]audio_init succ
-[00:00:00.289][USER_CFG]bt name config:soundbar
-[00:00:00.289][USER_CFG]read pair code err
-[00:00:00.290][USER_CFG]tws pair code config:
-88 88 
-[00:00:00.290][USER_CFG]rf config:5
-[00:00:00.290][USER_CFG]aec config:
-[00:00:00.291][USER_CFG]sms_ans config:
-[00:00:00.291][USER_CFG]aec cfg read err,use default value
-[00:00:00.291][USER_CFG]aec_cfg mic_gain:6 mic1_gain:6 dac_gain:0
-[00:00:00.292]vol_init call 10, music 50, tone 10
-[00:00:00.292][USER_CFG]warning_tone_v:3700 poweroff_tone_v:3600
-[00:00:00.293][USER_FG]auto_off_time:0
-[00:00:00.293][USER_CFG]read music play mode err
-[00:00:00.293][USER_CFG]
- app_var.cycle_mode:[0] set to [1]
-[00:00:00.294][USER_CFG]
- default scene 0 
-[00:00:00.294][USER_CFG]
- default eq0 cfg 0 
-[00:00:00.294][USER_CFG]mac:
-EC AE 49 66 07 A6 
-[00:00:00.295]adkey info len: 60
-[00:00:00.295]key_numbers: 10
-[00:00:00.295]adkey_pin: 17
-[00:00:00.295]extern_up_en: 1
-[00:00:00.296]pull_up_value: 220
-[00:00:00.296]ad_channel: 1048581
-[00:00:00.296]long_press_enable:0 time:8s
-[00:00:00.296]ADkey:0,judge_advalue:61,key_value:10
-[00:00:00.297]ADkey:1,judge_advalue:173,key_value:11
-[00:00:00.297]ADkey:2,judge_advalue:261,key_value:12
-[00:00:00.297]ADkey:3,judge_advalue:356,key_value:13
-[00:00:00.297]ADkey:4,judge_advalue:473,key_value:14
-[00:00:00.298]ADkey:5,judge_advalue:573,key_value:15
-[00:00:00.298]ADkey:6,judge_advalue:663,key_value:16
-[00:00:00.298]ADkey:7,judge_advalue:776,key_value:17
-[00:00:00.299]ADkey:8,jude_advalue:884,key_value:18
-[00:00:00.299]ADkey:9,judge_advalue:976,key_value:19
-[00:00:00.299]type = 100000,ch = 5
-[00:00:00.300][UPDATE]update module init ok
-[00:00:00.300][TEST-UPDATE]testbox msg handle reg:6006a0c
-[00:00:00.300]audio_online_debug_open
-[00:00:00.301][CLOCK]---HSB CLK : 320000000
-[00:00:00.301][CLOCK]---LSB CLK : 80000000
-[00:00:00.301][CLOCK]---XIP CLK : 80000000
-[00:00:00.301][CLOCK]---DVDD  : 0 | 12 = 12
-[00:00:00.302][CLOCK]---RVDD  : 12 = 12
-[00:00:00.302][CLOCK]---DCVDD : 8 = 8
-[00:00:00.302][CLOCK]---RANGE : 2 
-[00:00:00.302]usb_stack_init()
-[00:00:00.302][USB]OTG_info0: 1 3 fa
-[00:00:00.303][SD]sd0 init !
-[00:00:00.303][USB]OTG_cnt0: 3 2 2 3
-[00:00:00.303]sd io init !
-[00:00:00.303]hdmi port22;dport[ff] 
-[00:00:00.303]cec io [23]
-[00:00:00.303]iis scl porta [24]
-[00:00:00.303]iis sda porta [27
-[00:00:00.304]iic num 0;hdmi det mode[1] 
-[00:00:00.304]hdmi det port [26]
-[00:00:00.304]opt port20;dport[ff] 
-[00:00:00.304]caol port6;dport[ff] 
-[00:00:00.304]analog port index[3]
-[00:00:00.304] HDMI_DET_BY_IO 
-[00:00:00.305]sdfile add start
-[00:00:00.305]dev_manager_add can not find logo sdfile
-[00:00:00.305]==========================   
-
-[00:00:00.305][LED7] led7_init
-[00:00:00.305]led7_timer_init
-[00:00:00.305]err priority 7 : priority 6 is reserved fot GIEMASK
-[00:00:00.306]led7 timer id:1
-[00:00:00.306][APP-UPDATE]<--------update_result_deal=0x5a00 9181--------->
-[00:00:00.306]=================update_param_len:1000
-[00:00:00.306]vbat: 4780
-[00:00:00.306]vbat: 4780
-[00:00:00.307]vbat: 4780
-[00:00:00.307]vbat: 4780
-[00:00:00.307]vbat: 4780
-[00:00:00.307]vbat: 4780
-[00:00:00.307]vbat: 4780
-[00:00:00.307]vbat: 4780
-[00:00:00.307]vbat: 4780
-[00:00:00.307]vbat: 4780
-[00:00:00.307]vbat: 4780
-[00:00:00.308][BATTERY]percent: 0, voltage: 3300 mV
-[00:00:00.308][BATTERY]percent: 5, voltage: 3450 mV
-[00:00:00.308][BATTERY]percent: 10, voltage: 3680 mV
-[00:00:00.308][BATTERY]percent: 20, voltage: 3740 mV
-[00:00:00.308][BATTERY]percent: 30, voltage: 3770 mV
-[00:00:00.309][BATTERY]percent: 40, voltage: 3790 mV
-[00:00:00.309][BATTERY]percent: 50, voltage: 3820 mV
-[00:00:00.309][BATTERY]percent: 60, voltage: 3870 mV
-[00:00:00.309][BATTERY]percent: 70, voltage: 3920 mV
-[00:00:00.309][BATTERY]percent: 80, voltage: 3980 mV
-[00:00:00.310][BATTERY]percent: 90, voltage: 4060 mV
-[00:00:00.310][BATTERY]percent: 100, voltage: 4120 mV
-[00:00:00.310][CLOCK]sys_pll_trim() info dump:
-[00:00:00.310][CLOCK]get sys_pll trim from flash 4
-[00:00:00.311][CLOCK]usb_pll_trim() info dump:
-[00:00:00.311][CLOCK]get usb_pll trim from flash 3
-[00:00:00.311][CLOCK]usb_rxldo_trim() info dump:
-[00:00:00.311][CLOCK]get RX_HS_LDO trim from flash 7
-[00:00:00.311][CLOCK]get TX_HS_LDO trim from efuse 15
-[00:00:00.312][APP_IDLE]power on
-[00:00:00.312]tone_player: tone_zh/power_on.*
-[00:00:00.312]pipeline_uuid: 7674
-
-[00:00:00.312][STREAM]create_stream: 419644, 0
-[00:00:00.313]demuxer_not_match: power_on.mp3
-[00:00:00.314]source_fmt: 14, 16000
-[00:00:00.314]ui led7_MODE:2
-[00:00:00.314]pwm led normal status:1
-[00:00:00.314][STREAM]bit_wide: channel_expander, 0, 1
-[00:00:00.314]led_ui_do_display: uuid: 0xa6a4
-[00:00:00.315][STREAM]bit_wide: mixer, 0, 1
-[00:00:00.315]led_ui_period_action_display_try: ret = -2
-[00:00:00.315][STREAM]bit_wide: bt_audio_sync, 0, 1
-[00:00:00.315]current_state_loop = 0
-[00:00:00.315][STREAM]bit_wide: volume, 0, 1
-[00:00:00.316][STREAM]negotiation: deal
-[00:00:00.316][STREAM]source: sample_rate 16000, channel 14, bit_wide 0, Qval 15
-[00:00:00.316][STREAM]thread: tone_dec, decoder
-[00:00:00.316][STREAM]decoder: sample_rate 16000, channel 14, bit_wide 1, Qval 15
-[00:00:00.317]volume_ioc_start bit_wide, 1 1 15
-[00:00:00.317]volume_ioc_start len 16, sizeof(cfg) 16
-[00:00:00.317]vol read config ok :16,-45,0,1,0
-[00:00:00.318]vol param:2063,(300/100)dB,cur:10,max:16,(-1800/100)dB
-[00:00:00.318]audio_state:idle->tone,max_vol:16
-[00:00:00.318]set_vol[tone]:tone=10
-[00:00:00.318]audio_syncts_node_start bit_wide, 1 1 15
-[00:00:00.319][STREAM]thread: syncts, bt_audio_sync
-[00:00:00.319]audio syncts node start : 1,  1, 16000, 44100
-[00:00:00.320][STREAM]thread: stream_out, dac
-[00:00:00.320][STREAM]dac: sample_rate 44100, channel 25, bit_wide 1, Qval 15
-[00:00:00.320][STREAM]send_callback_err: app_core, 8, 0
-[00:00:00.320]tone_callback: 8, 0
-[00:00:00.321][AUDIO-DAC]fifo init : 0x16b180 0x4b0 0x0 0x0 0x4af
-[00:00:00.322]>>>>>>>>>>>>>>>>>> channel: 2
-[00:00:00.332]>>dac_trim: -978 -1079 0 0
-[00:00:00.332]>>TM0: fbc9fc2e TM1: 0
- 
-[00:00:00.332][AUDIO-DAC]delay set : 1200, 108, 880
-U
-[00:00:00.333][AUDIO-DAC]audio_dac_fifo_start : 0x0, 10, DAC_CON = 0x80130195
-[00:00:00.333][fade]state:tone,max_volume:16,cur:10,10
-[00:00:00.333]set_vol[tone]:=10
-[00:00:00.370]cur_voltage: 4780 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-
-[00:00:00.847][STREAM]dec_err: 48
-[00:00:00.863][STREAM]dec_end: 0
-[00:00:00.863][AUDIO-DAC]DAV VOL0 : 0x20002000
-[00:00:00.864][fade]state:idle,max_volume:100,cur:0,0
-[00:00:00.864]set_vol[idle]:=0
-[00:00:00.916][AUDIO-DAC]dac off
-[00:00:00.916][STREAM]send_callback_err: app_core, 10, 0
-[00:00:00.916]tone_callback: a, 0
-[00:00:00.916][STREAM]kill_thread: tone_dec
-[00:00:00.917][STREAM]kill_thread: syncts
-[00:00:00.917][STREAM]kill_thread: stream_out
-[00:00:00.917][STREAM]free_stream: 419644
-[00:00:00.917][STREAM]decoder_release: 4198c0
-[00:00:00.917][STREAM]release: jlstream 10
-[00:00:00.918][APP_IDLE]exit power on mode
-[00:00:00.918]bt_code_size:2702
-[00:00:00.918]Current free heap 584316 bytes, minimum ever free heap 552100 bytes, physics memory size 361984 bytes
-[00:00:00.918]bt_code_run_addr:0x168000
-[00:00:00.919]Current free heap 584276 bytes, minimum ever free heap 552100 bytes, physics memory size 359040 bytes
-[00:00:00.919]tone_player: tone_zh/bt.*
-[00:00:00.920]pipeline_uuid: 7674
-
-[00:00:00.920][STREAM]create_stream: 41979c, 0
-[00:00:00.920]demuer_not_match: bt.mp3
-[00:00:00.921]source_fmt: 14, 16000
-[00:00:00.921][0]:0 
-[00:00:00.921][STREAM]bit_wide: channel_expander, 0, 1
-[00:00:00.921][1]:6 
-[00:00:00.922][STREAM]bit_wide: mixer, 0, 1
-[00:00:00.922][2]:12 
-[00:00:00.922][STREAM]bit_wide: bt_audio_sync, 0, 1
-[00:00:00.922][3]:18 
-[00:00:00.922][STREAM]bit_wide: volume, 0, 1
-[00:00:00.923][4]:25 
-[00:00:00.923][STREAM]negotiation: deal
-[00:00:00.923][5]:31 
-[00:00:00.923][STREAM]source: sample_rate 16000, channel 14, bit_wide 0, Qval 15
-[00:00:00.923][6]:37 
-[00:00:00.924][STREAM]thread: tone_dec, decoder
-[00:00:00.924][7]:43 
-[00:00:00.924][STREAM]decoder: sample_rate 16000, channel 14, bit_wide 1, Qval 15
-[00:00:00.924][8]:50 
-[00:00:00.925][9]:56 
-[00:00:00.925]volume_ioc_start bit_wide, 1 1 15
-[00:00:00.925][10]:62 
-[00:00:00.925]volume_ioc_start len 16, sizeof(cfg) 16
-[00:00:00.925][11]:68 
-[00:00:00.925]vol read config ok :16,-45,0,1,0
-[00:00:00.926][12]:75 
-[00:00:00.926]vol param:2063,(300/100)dB,cur:10,max:16,(-1800/100)dB
-[00:00:00.926][13]:81 
-[00:00:00.926]audio_state:idle->tone,max_vol:16
-[00:00:00.927][14]:87 
-[00:00:00.927]set_vol[tone]:tone=10
-[00:00:00.927][15]:93 
-[00:00:00.927]audio_syncts_node_start bit_wide, 1 1 15
-[00:00:00.927][16]:100 
-[00:00:00.927][STREAM]thread: syncts, bt_audio_sync
-[00:00:00.928]le_support:1 1
-[00:00:00.928]audio syncts node start : 1,  1, 16000, 44100
-[00:00:00.928]le_config:1 1 1 1
-[00:00:00.928][LMP]>>>btctrler_task_init<<<
-[00:00:00.928][STREAM]thread: stream_out, dac
-[00:00:00.929][STREAM]dac: sample_rate 44100, channel 25, bit_wide 1, Qval 15
-[00:00:00.929][STREAM]send_callback_err: app_core, 8, 0
-[00:00:00.930][AUDIO-DAC]fifo init : 0x16b180 0x4b0 0x0 0x0 0x4af
-[00:00:00.930]>>>>>>>>>>>>>>>>>> channel: 2
-[00:00:00.940]>>dac_trim: -978 -1079 0 0
-[00:00:00.940]>>TM0: fbc9fc2e TM1: 0
- 
-[00:00:00.941][AUDIO-DAC]delay set : 1200, 108, 880
-[00:00:00.941][AUDIO-DAC]audio_dac_fifo_start : 0x0, 10, DAC_CON = 0x801301b5
-U
-[00:00:00.941][fade]state:tone,max_volume:16,cur:10,10
-[00:00:00.941]set_vol[tone]:=10
-[00:00:00.959]cap:3d ############# freq:2403
-[00:00:00.959]cap:3d ############# freq:2411
-[00:00:00.959]cap:39 ############# freq:2438
-[00:00:00.959]cap:39 ############# freq:2446
-[00:00:00.959]cap:36 ############# freq:2465
-[00:00:00.960]cap:36 ############# freq:2473
-[00:00:00.960][HCI_LMP]init
-[00:00:00.960][HCI_LMP]open
-[00:00:00.960]bredr_bd_init
-[00:00:00.961]bredr_bd_init_success
-[00:00:00.961][HCI_LMP]loca_name soundbar
-[00:00:00.961]bt_app_msg type:0x3d
-[00:00:00.61][HCI_LMP]32 9
-[00:00:00.961]unknow msg type:61
-[00:00:00.962][LMP]HCI_WRITE_SCAN_ENABLE : 0
-[00:00:00.962]tone_callback: 8, 1
-[00:00:00.962]bt_app_msg type:0x3c
-[00:00:00.962]unknow msg type:60
-[00:00:00.962]ui led7_MODE:3
-[00:00:00.962][SOUNDBOX]BT_STATUS_INIT_OK
-[00:00:00.963]dual_conn BT_STATUS_INIT_OK
-[00:00:00.963]page_state: 0, 0
-[00:00:00.963][PHONECALL] BT STATUS DEFAULT
-[00:00:00.963][LMP]HCI_WRITE_SCAN_ENABLE : 3
-[00:00:00.963]pwm led normal status:4
-[00:00:00.964]led_ui_do_display: uuid: 0x2383
-[00:00:00.964]led_ui_period_action_display_try: ret = 0
-[00:00:00.964]bt_app_msg type:0x47
-[00:00:00.964]unknow msg type:71
-[00:00:00.973]inquiry_scan: soundbar
-
-EC AE 49 66 07 A6 
-[00:00:00.973][BDMGR]sort_0_edr
-iqs 34
-ide 1000
-I
-[00:00:00.974]page_scan_enable
-
-EC AE 49 66 07 A6 
-[00:00:00.974][BDMGR]sort_0_edr
-iqs 34
-pgs 34
-ide 1000
-PIP
-[00:00:01.514]LINEIN ONLINE
-[00:00:01.864][STREAM]dec_err: 48
-[00:00:01.880][STREAM]dec_end: 0
-[00:00:01.880][AUDIO-DAC]DAV VOL0 : 0x20002000
-[00:00:01.881][fade]state:idle,max_volume:100,cur:0,0
-[00:00:01.881]set_vol[idle]:=0
-I
-[00:00:01.933][AUDIO-DAC]dac off
-[00:00:01.933][STREAM]send_callback_err: app_core, 10, 0
-[00:00:01.933]tone_callback: a, 1
-[00:00:01.933][STREAM]kill_thread: tone_dec
-[00:00:01.933][STREAM]kill_thread: syncts
 [00:00:01.934][STREAM]kill_thread: stream_out
 [00:00:01.934][STREAM]free_stream: 41979c
 [00:00:01.934][STREAM]decoder_release: 41990c
-[00:00:01.934][STREAM]release: jlstream 10
+[00:00:01.935][STREAM]release: jlstream 10
 PIPIPIPIPIPIPIP
-[00:00:05.289]>>Audio_Config_Trace:
-[00:00:05.289][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:00:05.289][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
+[00:00:05.290]>>Audio_Config_Trace:
+[00:00:05.290][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
+[00:00:05.290][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
 [00:00:05.290][BitWidth]DAC = 24Bit,ADC = 16Bit
 [00:00:05.290]JL_WL_AUD CON0:1
-[00:00:05.290]AUD_CON:10a
-[00:00:05.290]DAC_CON:80130195
-[00:00:05.290]ADC_CON:10b04
-[00:00:05.290]ADC_CON1:80000
-[00:00:05.290]DAC_TM0:fbc9fc2e
+[00:00:05.291]AUD_CON:10a
+[00:00:05.291]DAC_CON:8013019a
+[00:00:05.291]ADC_CON:10b04
+[00:00:05.291]ADC_CON1:80000
+[00:00:05.291]DAC_TM0:fbe0fc4c
 [00:00:05.291]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:00:05.291]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:00:05.291]ADDA_CON 0:d8cd0000	1:0
-[00:00:05.318][APP_AUDIO]VOL_SAVE 50
+[00:00:05.292]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
+[00:00:05.292]ADDA_CON 0:b8cd0000	1:0
+[00:00:05.319][APP_AUDIO]VOL_SAVE 50
 IP
 [00:00:05.880]cpu: 2 2  clk:320000000 24000000 24000000, 1
 
 [00:00:05.891][CLOCK]---HSB CLK : 24000000
 [00:00:05.891][CLOCK]---LSB CLK : 24000000
-[00:00:05.891][CLOCK]---XIP CLK : 24000000
-[00:00:05.882][CLOCK]---DVDD  : 0 | 4 = 4
-[00:00:05.883][CLOCK]---RVDD  : 4 = 4
-[00:00:05.883][CLOCK]---DCVDD : 8 = 8
-[00:00:05.884][CLOCK]---RANGE : 0 IPIPIPIPIP
-[00:00:09.881]cpu: 1 9  clk:24000000 24000000 24000000, 1
+[00:00:05.882][CLOCK]---XIP CLK : 24000000
 IP
-[00:00:10.289]>>Audio_Config_Trace:
-[00:00:10.290][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:00:10.291][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:00:10.292][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:00:10.293]JL_WL_AUD CON0:1
-[00:00:10.293]AUD_CON:10a
-[00:00:10.294]DAC_CON:80130195
-[00:00:10.294]ADC_CON:10b04
-[00:00:10.294]ADC_CON1:80000
-[00:00:10.295]DAC_TM0:fbc9fc2e
-[00:00:10.295]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:00:10.296]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:00:10.297]ADDA_CON 0:d8cd0000	1:0
-[00:00:10.372]cur_voltage: 4880 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIP
-[00:00:13.882]cpu: 2 9  clk:24000000 24000000 24000000, 1
-IPIP
-[00:00:15.290]>>Audio_Config_Trace:
-[00:00:15.290][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:00:15.291][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:00:15.291][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:00:15.292]JL_WL_AUD CON0:1
-[00:00:15.292]AUD_CON:10a
-[00:00:15.293]DAC_CON:80130195
-[00:00:15.293]ADC_CON:10b04
-[00:00:15.293]ADC_CON1:80000
-[00:00:15.294]DAC_TM0:fbc9fc2e
-[00:00:15.294]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:00:15.295]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:00:15.296]ADDA_CON 0:d8cd0000	1:0
+[00:00:15.388]>>Audio_Config_Trace:
+[00:00:15.388][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
+[00:00:15.389][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
+[00:00:15.389][BitWidth]DAC = 24Bit,ADC = 16Bit
+[00:00:15.391]JL_WL_AUD CON0:1
+[00:00:15.391]AUD_CON:10a
+[00:00:15.392]DAC_CON:801f019a
+[00:00:15.392]ADC_CON:10b04
+[00:00:15.393]ADC_CON1:80000
+[00:00:15.393]DAC_TM0:fbe3fc53
+[00:00:15.394]DAA_CON 0:1c400544 	1:137,	2:9a69a6,	3:75577520    4:0,7:5000
+[00:00:15.395]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
+[00:00:15.396]ADDA_CON 0:8dd0000	1:0
 IPIPIPIP
-[00:00:17.883]cpu: 1 9  clk:24000000 24000000 24000000, 1
-IPIPIP
-[00:00:20.289]>>Audio_Config_Trace:
-[00:00:20.290][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:00:20.291][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:00:20.292][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:00:20.292]JL_WL_AUD CON0:1
-[00:00:20.293]AUD_CON:10a
-[00:00:20.293]DAC_CON:80130195
-[00:00:20.294]ADC_CON:10b04
-[00:00:20.294]ADC_CON1:80000
-[00:00:20.294]DAC_TM0:fbc9fc2e
-[00:00:20.295]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:00:20.296]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:00:20.297]ADDA_CON 0:d8cd0000	1:0
-[00:00:20.373]cur_voltage: 4884 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIP
-[00:00:21.883]cpu: 2 9  clk:24000000 24000000 24000000, 1
-IPIPIPIPIP
-[00:00:25.289]>>Audio_Config_Trace:
-[00:00:25.290][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:00:25.291][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:00:25.292][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:00:25.292]JL_WL_AUD CON0:1
-[00:00:25.293]AUD_CON:10a
-[00:00:25.293]DAC_CON:80130195
-[00:00:25.294]ADC_CON:10b04
-[00:00:25.294]ADC_CON1:80000
-[00:00:25.294]DAC_TM0:fbc9fc2e
-[00:00:25.295]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:00:25.296]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:00:25.297]ADDA_CON 0:d8cd0000	1:0
-IP
-[00:00:25.883]cpu: 2 9  clk:24000000 24000000 24000000, 1
-IPIPIPIPIP
-[00:00:29.883]cpu: 1 9  clk:24000000 24000000 24000000, 1
-IP
-[00:00:30.291]>>Audio_Config_Trace:
-[00:00:30.291][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:00:30.292][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:00:30.292][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:00:30.293]JL_WL_AUD CON0:1
-[00:00:30.294]AUD_CON:10a
-[00:00:30.294]DAC_CON:80130195
-[00:00:30.295]ADC_CON:10b04
-[00:00:30.295]ADC_CON1:80000
-[00:00:30.296]DAC_TM0:fbc9fc2e
-[00:00:30.296]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:00:30.297]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:00:30.298]ADDA_CON 0:d8cd0000	1:0
-[00:00:30.372]cur_voltage: 4888 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:00:35.291]>>Audio_Config_Trace:
-[00:00:35.291][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:00:35.292][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:00:35.293][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:00:35.293]JL_WL_AUD CON0:1
-[00:00:35.294]AUD_CON:10a
-[00:00:35.295]DAC_CON:80130195
-[00:00:35.296]ADC_CON:10b04
-[00:00:35.297]ADC_CON1:80000
-[00:00:35.297]DAC_TM0:fbc9fc2e
-[00:00:35.297]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:00:35.299]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:00:35.299]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:00:40.290]>>Audio_Config_Trace:
-[00:00:40.291][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:00:40.291][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:00:40.292][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:00:40.292]JL_WL_AUD CON0:1
-[00:00:40.293]AUD_CON:10a
-[00:00:40.293]DAC_CON:80130195
-[00:00:40.293]ADC_CON:10b04
-[00:00:40.294]ADC_CON1:80000
-[00:00:40.294]DAC_TM0:fbc9fc2e
-[00:00:40.295]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:00:40.295]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:00:40.296]ADDA_CON 0:d8cd0000	1:0
-[00:00:40.374]cur_voltage: 4888 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:00:45.291]>>Audio_Config_Trace:
-[00:00:45.292][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:00:45.293][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:00:45.294][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:00:45.294]JL_WL_AUD CON0:1
-[00:00:45.295]AUD_CON:10a
-[00:00:45.295]DAC_CON:80130195
-[00:00:45.296]ADC_CON:10b04
-[00:00:45.296]ADC_CON1:80000
-[00:00:45.297]DAC_TM0:fbc9fc2e
-[00:00:45.297]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:00:45.298]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:00:45.299]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:00:50.292]>>Audio_Config_Trace:
-[00:00:50.292][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:00:50.294][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:00:50.294][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:00:50.295]JL_WL_AUD CON0:1
-[00:00:50.295]AUD_CON:10a
-[00:00:50.296]DAC_CON:80130195
-[00:00:50.296]ADC_CON:10b04
-[00:00:50.296]ADC_CON1:80000
-[00:00:50.297]DAC_TM0:fbc9fc2e
-[00:00:50.298]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:00:50.299]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:00:50.300]ADDA_CON 0:d8cd0000	1:0
-[00:00:50.373]cur_voltage: 4896 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:00:55.293]>>Audio_Config_Trace:
-[00:00:55.294][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:00:55.295][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:00:55.296][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:00:55.296]JL_WL_AUD CON0:1
-[00:00:55.296]AUD_CON:10a
-[00:00:55.297]DAC_CON:80130195
-[00:00:55.297]ADC_CON:10b04
-[00:00:55.298]ADC_CON1:80000
-[00:00:55.298]DAC_TM0:fbc9fc2e
-[00:00:55.299]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:00:55.301]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:00:55.302]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:01:00.294]>>Audio_Config_Trace:
-[00:01:00.294][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:01:00.296][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:01:00.296][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:01:00.297]JL_WL_AUD CON0:1
-[00:01:00.297]AUD_CON:10a
-[00:01:00.298]DAC_CON:80130195
-[00:01:00.298]ADC_CON:10b04
-[00:01:00.299]ADC_CON1:80000
-[00:01:00.299]DAC_TM0:fbc9fc2e
-[00:01:00.301]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:01:00.302]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:01:00.303]ADDA_CON 0:d8cd0000	1:0
-[00:01:00.373]cur_voltage: 4884 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:01:05.295]>>Audio_Config_Trace:
-[00:01:05.296][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:01:05.296][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:01:05.298][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:01:05.298]JL_WL_AUD CON0:1
-[00:01:05.298]AUD_CON:10a
-[00:01:05.299]DAC_CON:80130195
-[00:01:05.300]ADC_CON:10b04
-[00:01:05.300]ADC_CON1:80000
-[00:01:05.301]DAC_TM0:fbc9fc2e
-[00:01:05.301]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:01:05.302]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:01:05.303]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:01:10.295]>>Audio_Config_Trace:
-[00:01:10.296][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:01:10.296][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:01:10.297][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:01:10.298]JL_WL_AUD CON0:1
-[00:01:10.298]AUD_CON:10a
-[00:01:10.299]DAC_CON:80130195
-[00:01:10.299]ADC_CON:10b04
-[00:01:10.301]ADC_CON1:80000
-[00:01:10.301]DAC_TM0:fbc9fc2e
-[00:01:10.302]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:01:10.303]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:01:10.304]ADDA_CON 0:d8cd0000	1:0
-[00:01:10.376]cur_voltage: 4892 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:01:15.297]>>Audio_Config_Trace:
-[00:01:15.297][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:01:15.298][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:01:15.299][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:01:15.299]JL_WL_AUD CON0:1
-[00:01:15.300]AUD_CON:10a
-[00:01:15.301]DAC_CON:80130195
-[00:01:15.302]ADC_CON:10b04
-[00:01:15.302]ADC_CON1:80000
-[00:01:15.303]DAC_TM0:fbc9fc2e
-[00:01:15303]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:01:15.304]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:01:15.305]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:01:20.297]>>Audio_Config_Trace:
-[00:01:20.297][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:01:20.298][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:01:20.298][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:01:20.299]JL_WL_AUD CON0:1
-[00:01:20.299]AUD_CON:10a
-[00:01:20.300]DAC_CON:80130195
-[00:01:20.300]ADC_CON:10b04
-[00:01:20.301]ADC_CON1:80000
-[00:01:20.301]DAC_TM0:fbc9fc2e
-[00:01:20.301]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:01:20.302]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:01:20.303]ADDA_CON 0:d8cd0000	1:0
-[00:01:20.375]cur_voltage: 4876 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:01:25.297]>>Audio_Config_Trace:
-[00:01:25.297][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:01:25.298][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:01:25.299][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:01:25.300]JL_WL_AUD CON0:1
-[00:01:25.301]AUD_CON:10a
-[00:01:25.302]DAC_CON:80130195
-[00:01:25.302]ADC_CON:10b04
-[00:01:25.302]ADC_CON1:80000
-[00:01:5.303]DAC_TM0:fbc9fc2e
-[00:01:25.303]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:01:25.304]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:01:25.306]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:01:30.296]>>Audio_Config_Trace:
-[00:01:30.297][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:01:30.298][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:01:30.299][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:01:30.299]JL_WL_AUD CON0:1
-[00:01:30.300]AUD_CON:10a
-[00:01:30.301]DAC_CON:80130195
-[00:01:30.301]ADC_CON:10b04
-[00:01:30.302]ADC_CON1:80000
-[00:01:30.302]DAC_TM0:fbc9fc2e
-[00:01:30.303]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:01:30.304]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:01:30.305]ADDA_CON 0:d8cd0000	1:0
-[00:01:30.376]cur_voltage: 4888 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:01:35.297]>>Audio_Config_Trace:
-[00:01:35.297][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:01:35.298][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:01:35.299][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:01:35.299]JL_WL_AUD CON0:1
-[00:01:35.301]AUD_CON:10a
-[00:01:35.302]DAC_CON:80130195
-[00:01:35.302]ADC_CON:10b04
-[00:01:35.303]ADC_CON1:80000
-[00:01:35.303]DAC_TM0:fbc9fc2e
-[00:01:35.303]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:01:35.305]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:01:35.306]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:01:40.297]>>Audio_Config_Trace:
-[00:01:40.297][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:01:40.298][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:01:40.299][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:01:40.301]JL_WL_AUD CON0:1
-[00:01:40.301]AUD_CON:10a
-[00:01:40.301]DAC_CON:80130195
-[00:01:40.302]ADC_CON:10b04
-[00:01:40.302]ADC_CON1:80000
-[00:01:40.303]DAC_TM0:fbc9fc2e
-[00:01:40.304]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:01:40.305]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:01:40.306]ADDA_CON 0:d8cd0000	1:0
-[00:01:40.379]cur_voltage: 4884 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:01:45.298]>>Audio_Config_Trace:
-[00:01:45.299][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:01:45.301][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:01:45.301][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:01:45.302]JL_WL_AUD CON0:1
-[00:01:45.303]AUD_CON:10a
-[00:01:45.303]DAC_CON:80130195
-[00:01:45.304]ADC_CON:10b04
-[00:01:45.304]ADC_CON1:80000
-[00:01:45.305]DAC_TM0:fbc9fc2e
-[00:01:45.305]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:01:45.306]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:01:45.307]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:01:50.297]>>Audio_Config_Trace:
-[00:01:50.298][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:01:50.298][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:01:50.299][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:01:50.300]JL_WL_AUD CON0:1
-[00:01:50.300]AUD_CON:10a
-[00:01:50.300]DAC_CON:80130195
-[00:01:50.301]ADC_CON:10b04
-[00:01:50.301]ADC_CON1:80000
-[00:01:50.301]DAC_TM0:fbc9fc2e
-[00:01:50.302]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:01:50.302]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:01:50.303]ADDA_CON 0:d8cd0000	1:0
-[00:01:50.379]cur_voltage: 4888 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:01:55.298]>>Audio_Config_Trace:
-[00:01:55.298][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:01:55.300][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:01:55.301][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:01:55.302]JL_WL_AUD CON0:1
-[00:01:55.302]AUD_CON:10a
-[00:01:55.302]DAC_CON:80130195
-[00:01:55.303]ADC_CON:10b04
-[00:01:55.303]ADC_CON1:80000
-[00:01:55.305]DAC_TM0:fbc9fc2e
-[00:01:55.305]DAA_CON 0:1e400514 	1:137	2:9a6,	3:d0577420    4:0,7:5000
-[00:01:55.306]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:01:55.307]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:02:00.299]>>Audio_Config_Trace:
-[00:02:00.301][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:02:00.301][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:02:00.302][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:02:00.303]JL_WL_AUD CON0:1
-[00:02:00.303]AUD_CON:10a
-[00:02:00.304]DAC_CON:80130195
-[00:02:00.304]ADC_CON:10b04
-[00:02:00.305]ADC_CON1:80000
-[00:02:00.305]DAC_TM0:fbc9fc2e
-[00:02:00.306]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:02:00.307]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:02:00.308]ADDA_CON 0:d8cd0000	1:0
-[00:02:00.380]cur_voltage: 4892 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:02:05.299]>>Audio_Config_Trace:
-[00:02:05.301][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:02:05.301][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:02:05.302][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:02:05.302]JL_WL_AUD CON0:1
-[00:02:05.303]AUD_CON:10a
-[00:02:05.304]DAC_CON:80130195
-[00:02:05.304]ADC_CON:10b04
-[00:02:05.304]ADC_CON1:80000
-[00:02:05.305]DAC_TM0:fbc9fc2e
-[00:02:05.305]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:02:05.306]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:02:05.307]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:02:10.300]>>Audio_Config_Trace:
-[00:02:10.300][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:02:10.301][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:02:10.302][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:02:10.302]JL_WL_AUD CON0:1
-[00:02:10.303]AUD_CON:10a
-[00:02:10.303]DAC_CON:80130195
-[00:02:10.304]ADC_CON:10b04
-[00:02:10.304]ADC_CON1:80000
-[00:02:10.304]DAC_TM0:fbc9fc2e
-[00:02:10.305]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:02:10.305]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:02:10.306]ADDA_CON 0:d8cd0000	1:0
-[00:02:10.382]cur_voltage: 4888 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:02:15.301]>>Audio_Config_Trace:
-[00:02:15.301][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:02:15.302][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:02:15.303][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:02:15.304]JL_WL_AUD CON0:1
-[00:02:15.304]AUD_CON:10a
-[00:02:15.305]DAC_CON:80130195
-[00:02:15.305]ADC_CON:10b04
-[00:02:15.305]ADC_CON1:80000
-[00:02:15.306]DAC_TM0:fbc9fc2e
-[00:02:15.307]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:02:15.308]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:02:15.309]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:02:20.301]>>Audio_Config_Trace:
-[00:02:20.301][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:02:20.303][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:02:20.304][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:02:20.304]JL_WL_AUD CON0:1
-[00:02:20.305]AUD_CON:10a
-[00:02:20.305]DAC_CON:80130195
-[00:02:20.305]ADC_CON:10b04
-[00:02:20.306]ADC_CON1:80000
-[00:02:20.306]DAC_TM0:fbc9fc2e
-[00:02:20.306]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:02:20.307]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:02:20.308]ADDA_CON 0:d8cd0000	1:0
-[00:02:20.382]cur_voltage: 4888 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:02:25.302]>>Audio_Config_Trace:
-[00:02:25.303][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:02:25.303][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:02:25.304][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:02:25.305]JL_WL_AUD CON0:1
-[00:02:25.305]AUD_CON:10a
-[00:02:25.305]DAC_CON:80130195
-[00:02:25.306]ADC_CON:10b04
-[00:02:25.307]ADC_CON1:80000
-[00:02:25.307]DAC_TM0:fbc9fc2e
-[00:02:25.307]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:02:25.309]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:02:25.310]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:02:30.302]>>Audio_Config_Trace:
-[00:02:30.302][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:02:30.303][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:02:30.304][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:02:30.304]JL_WL_AUD CON0:1
-[00:02:30.305]AUD_CON:10a
-[00:02:30.305]DAC_CON:80130195
-[00:02:30.306]ADC_CON:10b04
-[00:02:30.306]ADC_CON1:80000
-[00:02:30.307]DAC_TM0:fbc9fc2e
-[00:02:30.308]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:02:30.308]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:02:30.310]ADDA_CON 0:d8cd0000	1:0
-[00:02:30.383]cur_voltage: 4900 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:02:35.301]>>Audio_Config_Trace:
-[00:02:35.302][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:02:35.302][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:02:35.303][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:02:35.304]JL_WL_AUD CON0:1
-[00:02:35.304]AUD_CON:10a
-[00:02:35.305]DAC_CON:80130195
-[00:02:35.305]ADC_CON:10b04
-[00:02:35.306]ADC_CON1:80000
-[00:02:35.306]DAC_TM0:fbc9fc2e
-[00:02:35.307]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:02:35.308]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:02:35.309]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:02:40.301]>>Audio_Config_Trace:
-[00:02:40.301][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:02:40.302][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:02:40.303][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:02:40.303]JL_WL_AUD CON0:1
-[00:02:40.303]AUD_CON:10a
-[00:02:40.304]DAC_CON:80130195
-[00:02:40.304]ADC_CON:10b04
-[00:02:40.304]ADC_CON1:80000
-[00:02:40.305]DAC_TM0:fbc9fc2e
-[00:02:40.305]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:02:40.306]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:02:40.307]ADDA_CON 0:d8cd0000	1:0
-[00:02:40.384]cur_voltage: 4908 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:02:45.302]>>Audio_Config_Trace:
-[00:02:45.302][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:02:45.303][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:02:45.304][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:02:45.305]JL_WL_AUD CON0:1
-[00:02:45.305]AUD_CON:10a
-[00:02:45.306]DAC_CON:80130195
-[00:02:45.306]ADC_CON:10b04
-[00:02:45.306]ADC_CON1:80000
-[00:02:45.307]DAC_TM0:fbc9fc2e
-[00:02:45.307]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:02:45.308]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:02:45.309]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:02:50.302]>>Audio_Config_Trace:
-[00:02:50.302][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:02:50.303][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:02:50.304][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:02:50.305]JL_WL_AUD CON0:1
-[00:02:50.305]AUD_CON:10a
-[00:02:50.306]DAC_CON:80130195
-[00:02:50.306]ADC_CON:10b04
-[00:02:50.307]ADC_CON1:80000
-[00:02:50.308]DAC_TM0:fbc9fc2e
-[00:02:50.309]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:02:50.310]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:02:50.311]ADDA_CON 0:d8cd0000	1:0
-[00:02:50.387]cur_voltage: 4892 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:02:55.302]>>Audio_Config_Trace:
-[00:02:55.303][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:02:55.304][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:02:55.305][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:02:55.305]JL_WL_AUD CON0:1
-[00:02:55.305]AUD_CON:10a
-[00:02:55.306]DAC_CON:80130195
-[00:02:55.307]ADC_CON:10b04
-[00:02:55.307]ADC_CON1:80000
-[00:02:55.307]DAC_TM0:fbc9fc2e
-[00:02:55.308]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:02:55.309]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:02:55.311]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:03:00.303]>>Audio_Config_Trace:
-[00:03:00.303][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:03:00.304][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:03:00.305][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:03:00.306]JL_WL_AUD CON0:1
-[00:03:00.307]AUD_CON:10a
-[00:03:00.307]DAC_CON:80130195
-[00:03:00.308]ADC_CON:10b04
-[00:03:00.308]ADC_CON1:80000
-[00:03:00.309]DAC_TM0:fbc9fc2e
-[00:03:00.309]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:03:00.310]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:03:00.312]ADDA_CON 0:d8cd0000	1:0
-[00:03:00.385]cur_voltage: 4896 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:03:05.303]>>Audio_Config_Trace:
-[00:03:05.304][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:03:05.304][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:03:05.305][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:03:05.306]JL_WL_AUD CON0:1
-[00:03:05.306]AUD_CON:10a
-[00:03:05.307]DAC_CON:80130195
-[00:03:05.307]ADC_CON:10b04
-[00:03:05.308]ADC_CON1:80000
-[00:03:05.308]DAC_TM0:fbc9fc2e
-[00:03:05.309]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:03:05.310]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:03:05.311]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:03:10.303]>>Audio_Config_Trace:
-[00:03:10.304][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:03:10.304][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:03:10.305][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:03:10.306]JL_WL_AUD CON0:1
-[00:03:10.306]AUD_CON:10a
-[00:03:10.307]DAC_CON:80130195
-[00:03:10.307]ADC_CON:10b04
-[00:03:10.308]ADC_CON1:80000
-[00:03:10.308]DAC_TM0:fbc9fc2e
-[00:03:10.309]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:03:10.310]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:03:10.312]ADDA_CON 0:d8cd0000	1:0
-[00:03:10.389]cur_voltage: 4892 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:03:15.304]>>Audio_Config_Trace:
-[00:03:15.304][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:03:15.305][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:03:15.306][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:03:15.307]JL_WL_AUD CON0:1
-[00:03:15.308]AUD_CON:10a
-[00:03:15.308]DAC_CON:80130195
-[00:03:15.308]ADC_CON:10b04
-[00:03:15.309]ADC_CON1:80000
-[00:03:15.310]DAC_TM0:fbc9fc2e
-[00:03:15.311]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:03:15.312]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:03:15.313]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:03:20.305]>>Audio_Config_Trace:
-[00:03:20.305][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:03:20.306][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:03:20.307][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:03:20.308]JL_WL_AUD CON0:1
-[00:03:20.309]AUD_CON:10a
-[00:03:20.309]DAC_CON:80130195
-[00:03:20.310]ADC_CON:10b04
-[00:03:20.311]ADC_CON1:80000
-[00:03:20.311]DAC_TM0:fbc9fc2e
-[00:03:20.312]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:03:20.313]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:03:20.314]ADDA_CON 0:d8cd0000	1:0
-[00:03:20.387]cur_voltage: 4896 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPIP
-[00:03:25.305]>>Audio_Config_Trace:
-[00:03:25.306][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:03:25.307][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:03:25.307][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:03:25.308]JL_WL_AUD CON0:1
-[00:03:25.308]AUD_CON:10a
-[00:03:25.309]DAC_CON:80130195
-[00:03:25.310]ADC_CON:10b04
-[00:03:25.310]ADC_CON1:80000
-[00:03:25.311]DAC_TM0:fbc9fc2e
-[00:03:25.312]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:03:25.312]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:03:25.314]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPI
-[00:03:30.306]>>Audio_Config_Trace:
-[00:03:30.306][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:03:30.307][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:03:30.308][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:03:30.309]JL_WL_AUD CON0:1
-[00:03:30.309]AUD_CON:10a
-[00:03:30.310]DAC_CON:80130195
-[00:03:30.311]ADC_CON:10b04
-[00:03:30.311]ADC_CON1:80000P
-[00:03:30.312]DAC_TM0:fbc9fc2e
-[00:03:30.312]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:03:30.313]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:03:30.315]ADDA_CON 0:d8cd0000	1:0
-[00:03:30.387]cur_voltage: 4892 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIPI
-[00:03:35.306]>>Audio_Config_Trace:
-[00:03:35.307][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:03:35.308][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:03:35.309][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:03:35.309]JL_WL_AUD CON0:1
-[00:03:35.309]AUD_CON:10a
-[00:03:35.311]DAC_CON:80130195
-[00:03:35.311]ADC_CON:10b04
-[00:03:35.311]ADC_CON1:80000
-[00:03:35.312]DAC_TM0:fbc9fc2e
-[00:03:35.313]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:03:35.313]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:03:35.315]ADDA_CON 0:d8cd0000	1:0
-PIPIPIPIPIPIP
-[00:03:40.307]>>Audio_Config_Trace:I
-[00:03:40.308][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:03:40.309][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:03:40.310][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:03:40.311]JL_WL_AUD CON01
-[00:03:40.311]AUD_CON:10a
-[00:03:40.312]DAC_CON:80130195
-[00:03:40.312]ADC_CON:10b04
-[00:03:40.313]ADC_CON1:80000
-[00:03:40.313]DAC_TM0:fbc9fc2e
-[00:03:40.314]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:03:40.315]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:03:40.316]ADDA_CON 0:d8cd0000	1:0
-P
-[00:03:40.389]cur_voltage: 4892 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIP
-[00:03:45.308]>>Audio_Config_Trace:
-[00:03:45.308][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:03:45.309][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:03:45.310][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:03:45.311]JL_WL_AUD CON0:1
-[00:03:45.311]AUD_CON:10a
-[00:03:45.312]DAC_CON:80130195
-[00:03:45.313]ADC_CON:10b04
-[00:03:45.313]ADC_CON1:80000
-[00:03:45.314]DAC_TM0:fbc9fc2e
-[00:03:45.314]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:03:45.315]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:03:45.315]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:03:50.308]>>Audio_Config_Trace:
-[00:03:50.308][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:03:50.310][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:03:50.311][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:03:50.312]JL_WL_AUD CON0:1
-[00:03:50.312]AUD_CON:10a
-[00:03:50.313]DAC_CON:80130195
-[00:03:50.313]ADC_CON:10b04
-[00:03:50.314]ADC_CON1:80000
-[00:03:50.314]DAC_TM0:fbc9fc2e
-[00:03:50.315]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:03:50.315]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:03:50.317]ADDA_CON 0:d8cd0000	1:0
-IP
-[00:03:50.389]cur_voltage: 4876 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIP
-[00:03:55.309]>>Audio_Config_Trace:
-[00:03:55.309][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:03:55.310][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:03:55.311][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:03:55.312]JL_WL_AUD CON0:1
-[00:03:55.312]AUD_CON:10a
-[00:03:55.313]DAC_CON:80130195
-[00:03:55.313]ADC_CON:10b04
-[00:03:55.314]ADC_CON1:80000
-[00:03:55.314]DAC_TM0:fbc9fc2e
-[00:03:55.315]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:03:55.316]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:03:55.317]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:04:00.309]>>Audio_Config_Trace:
-[00:04:00.310][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:04:00.311][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:04:00.311][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:04:00.312]JL_WL_AUD CON0:1
-[00:04:00.313]AUD_CON:10a
-[00:04:00.314]DAC_CON:80130195
-[00:04:00.315]ADC_CON:10b04
-[00:04:00.315]ADC_CON1:80000
-[00:04:00.315]DAC_TM0:fbc9fc2e
-[00:04:00.316]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:04:00.317]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:04:00.318]ADDA_CON 0:d8cd0000	1:0
-IP
-[00:04:00.391]cur_voltage: 4884 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
-IPIPIPIPIPIP
-[00:04:05.309]>>Audio_Config_Trace:
-[00:04:05.310][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:04:05.311][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:04:05.311][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:04:05.312]JL_WL_AUD CON0:1
-[00:04:05.312]AUD_CON:10a
-[00:04:05.313]DAC_CON:80130195
-[00:04:05.313]ADC_CON:10b04
-[00:04:05.314]ADC_CON1:80000
-[00:04:05.314]DAC_TM0:fbc9fc2e
-[00:04:05.315]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:04:05.316]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:04:05.317]ADDA_CON 0:d8cd0000	1:0
-IPIPIPIPIPIPIP
-[00:04:10.310]>>Audio_Config_Trace:
-[00:04:10.311][ADC_CFG]PGA:10,0,0,0,6dB_Boost:0,0,0,0,
-[00:04:10.312][DAC_CFG]AGain:7,3,1,0,DGain:0,0,8192,8192
-[00:04:10.312][BitWidth]DAC = 24Bit,ADC = 16Bit
-[00:04:10.314]JL_WL_AUD CON0:1
-[00:04:10.314]AUD_CON:10a
-[00:04:10.314]DAC_CON:80130195
-[00:04:10.315]ADC_CON:10b04
-[00:04:10.315]ADC_CON1:80000
-[00:04:10.316]DAC_TM0:fbc9fc2e
-[00:04:10.316]DAA_CON 0:1e400514 	1:137,	2:9a6,	3:d0577420    4:0,7:5000
-[00:04:10.317]ADA_CON 0:11430000	1:0	2:0	3:0	4:118d8f0	5:154da90  6:9dd6d04 7:85884008 8:31
-[00:04:10.318]ADDA_CON 0:d8cd0000	1:0
-IP
-[00:04:10.390]cur_voltage: 4880 mV, tmp_percent: 100, cur_percent: 100, cur_level: 9
+[00:00:17.983]cpu: 2 9  clk:24000000 24000000 24000000, 1
