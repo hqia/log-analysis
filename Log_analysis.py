@@ -88,45 +88,46 @@ def ac703n_audio_config(lists):
     ADDA_CON1 = lists[11].split("\t1:")[1]
     
     
-    str2bin(JL_WL_AUD_CON0)
-    str2bin(AUD_CON)
-    str2bin(DAC_CON)
-    str2bin(ADC_CON)
-    str2bin(ADC_CON1)
-    str2bin(DAC_TM0)
-    str2bin(DAA_CON0)
-    str2bin(DAA_CON1)
-    str2bin(DAA_CON2)
-    str2bin(DAA_CON3)
-    # str2bin(DAA_CON4)
-    str2bin(DAA_CON7)
-    str2bin(ADA_CON0)
-    str2bin(ADA_CON1)
-    str2bin(ADA_CON2)
-    str2bin(ADA_CON3)
-    str2bin(ADA_CON4)
-    str2bin(ADA_CON5)
-    str2bin(ADA_CON6)
-    str2bin(ADA_CON7)
-    str2bin(ADA_CON8)
-    str2bin(ADDA_CON0)
-    str2bin(ADDA_CON1)
+    # str2bin(JL_WL_AUD_CON0)
+    # str2bin(AUD_CON)
+    # str2bin(DAC_CON)
+    # str2bin(ADC_CON)
+    # str2bin(ADC_CON1)
+    # str2bin(DAC_TM0)
+    # str2bin(DAA_CON0)
+    # str2bin(DAA_CON1)
+    # str2bin(DAA_CON2)
+    # str2bin(DAA_CON3)
+    # # str2bin(DAA_CON4)
+    # str2bin(DAA_CON7)
+    # str2bin(ADA_CON0)
+    # str2bin(ADA_CON1)
+    # str2bin(ADA_CON2)
+    # str2bin(ADA_CON3)
+    # str2bin(ADA_CON4)
+    # str2bin(ADA_CON5)
+    # str2bin(ADA_CON6)
+    # str2bin(ADA_CON7)
+    # str2bin(ADA_CON8)
+    # str2bin(ADDA_CON0)
+    # str2bin(ADDA_CON1)
     
-    # print("============ac703n=============")
-    # show_AGain(DAA_CON1)
-    # show_sample_rate(DAC_CON)
-    # show_dac_performance_mode(DAA_CON0,DAA_CON3)
-    # show_power_level(ADDA_CON0,DAA_CON0)
-    # print("ADC位宽=" + ADC_Bitwidth)
-    # print("DAC位宽=" + DAC_Bitwidth)
+    print("============ac703n=============")
+    show_AGain(DAA_CON1)
+    show_sample_rate(DAC_CON)
+    show_dac_performance_mode(DAA_CON0,DAA_CON3)
+    show_power_level(ADDA_CON0,DAA_CON0)
+    print("ADC位宽=" + ADC_Bitwidth)
+    print("DAC位宽=" + DAC_Bitwidth)
     
 #
-
-def str2bin(data_str):
+#将字符串数据转成32位的二进制形式
+def str2bin(data_str):   
     data = bin(int(data_str,16)).split("0b")[1].zfill(32)
-    print(data)
+    # print(data)
     return data
 
+#电源档位信息
 def show_power_level(register1,register2):
     bin_register1 = str2bin(register1)
     bin_register2 = str2bin(register2)    
@@ -138,8 +139,8 @@ def show_power_level(register1,register2):
         print("VCM 无 外挂电容")
         dacldo_voltage = dacldo_voltage_tab.get(bin_register2[25:27])
         print("音频供电档位：\t" + dacldo_voltage)
-    
-    
+
+#dac性能模式        
 def show_dac_performance_mode(register1,register2):
     bin_register1 = str2bin(register1)
     bin_register2 = str2bin(register2)
@@ -153,14 +154,14 @@ def show_dac_performance_mode(register1,register2):
     else:
         print("性能模式：\t低功耗模式")
     
-    
-
+#采样率
 def show_sample_rate(register):
-    a = str2bin(register)
-    print(a)
+    # a = str2bin(register)
+    # print(a)
     global_sample_rate = sample_rate_tab.get(str2bin(register)[28:])
     print("全局采样率:\t%s"%global_sample_rate)
 
+#4通道模拟增益值
 def show_AGain(again):
     # 4通道模拟增益显示值
     FL_AGain = again_tab.get(str2bin(again)[29:])
@@ -169,7 +170,8 @@ def show_AGain(again):
     RR_AGain = again_tab.get(str2bin(again)[17:20])
     print("Analog Gain")
     print("FL Channel:  %s"%FL_AGain + "\tFR Channel:  %s"%FR_AGain + "\tRL Channel:  %s"%RL_AGain + "\tRR Channel:  %s"%RR_AGain)    
-  
+
+#通过芯片型号判断log适用规则并输出分析数据
 def get_config(chip_version):
     if '701' in chip_version:
         jl701n_audio_config(list_audio_configs)
