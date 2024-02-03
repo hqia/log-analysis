@@ -86,6 +86,7 @@ def ac703n_audio_config(lists):
     ADA_CON8 = lists[10].split(" 8:")[1]   
     ADDA_CON0 = lists[11].split("CON 0:")[1].split("\t1:")[0]
     ADDA_CON1 = lists[11].split("\t1:")[1]
+    DAC_CON1 = lists[5].split("CON:")[1]
     
     
     # str2bin(JL_WL_AUD_CON0)
@@ -113,12 +114,16 @@ def ac703n_audio_config(lists):
     # str2bin(ADDA_CON1)
     
     print("============ac703n=============")
+    print(list_audio_configs)
     show_AGain(DAA_CON1)
     show_sample_rate(DAC_CON)
     show_dac_performance_mode(DAA_CON0,DAA_CON3)
     show_power_level(ADDA_CON0,DAA_CON0)
     print("ADC位宽=" + ADC_Bitwidth)
     print("DAC位宽=" + DAC_Bitwidth)
+    # show_dac_out_mode(DAC_CON1)
+    
+    
     
 #
 #将字符串数据转成32位的二进制形式
@@ -126,6 +131,14 @@ def str2bin(data_str):
     data = bin(int(data_str,16)).split("0b")[1].zfill(32)
     # print(data)
     return data
+
+#判断DAC输出方式
+def show_dac_out_mode(register1):
+    bin_register1 = str2bin(register1)
+    if bin_register1[2] == '1':
+        print("差分输出")
+    else:
+        print("单端输出")
 
 #电源档位信息
 def show_power_level(register1,register2):
